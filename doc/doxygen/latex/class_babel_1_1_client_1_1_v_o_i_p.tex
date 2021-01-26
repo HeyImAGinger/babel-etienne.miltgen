@@ -1,0 +1,126 @@
+\hypertarget{class_babel_1_1_client_1_1_v_o_i_p}{}\doxysection{Babel\+::Client\+::V\+O\+IP Class Reference}
+\label{class_babel_1_1_client_1_1_v_o_i_p}\index{Babel::Client::VOIP@{Babel::Client::VOIP}}
+
+
+Manage audio and udp communications.  
+
+
+
+
+{\ttfamily \#include $<$V\+O\+I\+P.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_babel_1_1_client_1_1_v_o_i_p_1_1_audio_buffers}{Audio\+Buffers}}
+\begin{DoxyCompactList}\small\item\em Contain audio buffers (passed as argument to the Port\+Audio callback function) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_v_o_i_p_af2a060aed6c88751523c404f77be70be}{set\+I\+Pand\+Port}} (const std\+::string \&ip, unsigned int port)
+\begin{DoxyCompactList}\small\item\em Set the IP and P\+O\+RT where socket will listen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_v_o_i_p_a917f09fb974c34023f91c49ac10f0d5f}{set\+Target\+I\+Pand\+Port}} (const std\+::string \&ip, unsigned int port)
+\begin{DoxyCompactList}\small\item\em set IP and P\+O\+RT where socket will send audio. \end{DoxyCompactList}\item 
+quint16 \mbox{\hyperlink{class_babel_1_1_client_1_1_v_o_i_p_ae76f1188dcbf58fe1d4d17f763295649}{get\+Port}} () const
+\begin{DoxyCompactList}\small\item\em Return socket\textquotesingle{}s port. \end{DoxyCompactList}\item 
+quint16 \mbox{\hyperlink{class_babel_1_1_client_1_1_v_o_i_p_aa63f1ea06735bcafa2c24608bee785ec}{get\+Target\+Port}} () const
+\begin{DoxyCompactList}\small\item\em Return target socket\textquotesingle{}s port. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_v_o_i_p_a6dc2e628f11791fac829419852961a47}\label{class_babel_1_1_client_1_1_v_o_i_p_a6dc2e628f11791fac829419852961a47}} 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_v_o_i_p_a6dc2e628f11791fac829419852961a47}{start\+Stream}} ()
+\begin{DoxyCompactList}\small\item\em Start audio\+Stream() in a thread. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_v_o_i_p_ab103bc55d1c5c6da7c0b835cfecf23f1}\label{class_babel_1_1_client_1_1_v_o_i_p_ab103bc55d1c5c6da7c0b835cfecf23f1}} 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_v_o_i_p_ab103bc55d1c5c6da7c0b835cfecf23f1}{stop\+Stream}} ()
+\begin{DoxyCompactList}\small\item\em Stop the audio thread. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_v_o_i_p_a5dace10593927a700fcc18a864990da9}\label{class_babel_1_1_client_1_1_v_o_i_p_a5dace10593927a700fcc18a864990da9}} 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_v_o_i_p_a5dace10593927a700fcc18a864990da9}{set\+Microphone\+State}} (bool state)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable microphone. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_client_1_1_v_o_i_p_a6f141024f830af34ffe54b9c1bbaa070}{get\+Microphone\+State}} () const
+\begin{DoxyCompactList}\small\item\em Returns the microphone state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_v_o_i_p_a39ec33e1bfc5f233ded97b108da3b702}\label{class_babel_1_1_client_1_1_v_o_i_p_a39ec33e1bfc5f233ded97b108da3b702}} 
+bool \mbox{\hyperlink{class_babel_1_1_client_1_1_v_o_i_p_a39ec33e1bfc5f233ded97b108da3b702}{is\+Receiving\+Audio}} () const
+\begin{DoxyCompactList}\small\item\em Return T\+R\+UE if receiving audio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manage audio and udp communications. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_v_o_i_p_a6f141024f830af34ffe54b9c1bbaa070}\label{class_babel_1_1_client_1_1_v_o_i_p_a6f141024f830af34ffe54b9c1bbaa070}} 
+\index{Babel::Client::VOIP@{Babel::Client::VOIP}!getMicrophoneState@{getMicrophoneState}}
+\index{getMicrophoneState@{getMicrophoneState}!Babel::Client::VOIP@{Babel::Client::VOIP}}
+\doxysubsubsection{\texorpdfstring{getMicrophoneState()}{getMicrophoneState()}}
+{\footnotesize\ttfamily bool Babel\+::\+Client\+::\+V\+O\+I\+P\+::get\+Microphone\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the microphone state. 
+
+\begin{DoxyReturn}{Returns}
+bool is\+Mic\+On 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_v_o_i_p_ae76f1188dcbf58fe1d4d17f763295649}\label{class_babel_1_1_client_1_1_v_o_i_p_ae76f1188dcbf58fe1d4d17f763295649}} 
+\index{Babel::Client::VOIP@{Babel::Client::VOIP}!getPort@{getPort}}
+\index{getPort@{getPort}!Babel::Client::VOIP@{Babel::Client::VOIP}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily quint16 Babel\+::\+Client\+::\+V\+O\+I\+P\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Return socket\textquotesingle{}s port. 
+
+\begin{DoxyReturn}{Returns}
+quint16 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_v_o_i_p_aa63f1ea06735bcafa2c24608bee785ec}\label{class_babel_1_1_client_1_1_v_o_i_p_aa63f1ea06735bcafa2c24608bee785ec}} 
+\index{Babel::Client::VOIP@{Babel::Client::VOIP}!getTargetPort@{getTargetPort}}
+\index{getTargetPort@{getTargetPort}!Babel::Client::VOIP@{Babel::Client::VOIP}}
+\doxysubsubsection{\texorpdfstring{getTargetPort()}{getTargetPort()}}
+{\footnotesize\ttfamily quint16 Babel\+::\+Client\+::\+V\+O\+I\+P\+::get\+Target\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Return target socket\textquotesingle{}s port. 
+
+\begin{DoxyReturn}{Returns}
+quint16 port 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_v_o_i_p_af2a060aed6c88751523c404f77be70be}\label{class_babel_1_1_client_1_1_v_o_i_p_af2a060aed6c88751523c404f77be70be}} 
+\index{Babel::Client::VOIP@{Babel::Client::VOIP}!setIPandPort@{setIPandPort}}
+\index{setIPandPort@{setIPandPort}!Babel::Client::VOIP@{Babel::Client::VOIP}}
+\doxysubsubsection{\texorpdfstring{setIPandPort()}{setIPandPort()}}
+{\footnotesize\ttfamily void Babel\+::\+Client\+::\+V\+O\+I\+P\+::set\+I\+Pand\+Port (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ip,  }\item[{unsigned int}]{port }\end{DoxyParamCaption})}
+
+
+
+Set the IP and P\+O\+RT where socket will listen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & ip \\
+\hline
+{\em unsigned} & int port \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_v_o_i_p_a917f09fb974c34023f91c49ac10f0d5f}\label{class_babel_1_1_client_1_1_v_o_i_p_a917f09fb974c34023f91c49ac10f0d5f}} 
+\index{Babel::Client::VOIP@{Babel::Client::VOIP}!setTargetIPandPort@{setTargetIPandPort}}
+\index{setTargetIPandPort@{setTargetIPandPort}!Babel::Client::VOIP@{Babel::Client::VOIP}}
+\doxysubsubsection{\texorpdfstring{setTargetIPandPort()}{setTargetIPandPort()}}
+{\footnotesize\ttfamily void Babel\+::\+Client\+::\+V\+O\+I\+P\+::set\+Target\+I\+Pand\+Port (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ip,  }\item[{unsigned int}]{port }\end{DoxyParamCaption})}
+
+
+
+set IP and P\+O\+RT where socket will send audio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & ip \\
+\hline
+{\em unsigned} & int port \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/V\+O\+I\+P.\+hpp\item 
+client/V\+O\+I\+P.\+cpp\end{DoxyCompactItemize}

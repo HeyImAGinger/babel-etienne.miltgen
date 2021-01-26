@@ -1,0 +1,126 @@
+\hypertarget{class_babel_1_1_server_1_1_babel_client}{}\doxysection{Babel\+::Server\+::Babel\+Client Class Reference}
+\label{class_babel_1_1_server_1_1_babel_client}\index{Babel::Server::BabelClient@{Babel::Server::BabelClient}}
+
+
+\mbox{\hyperlink{namespace_babel_1_1_client}{Client}} instance.  
+
+
+
+
+{\ttfamily \#include $<$Babel\+Client.\+hpp$>$}
+
+Inheritance diagram for Babel\+::Server\+::Babel\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_babel_1_1_server_1_1_babel_client}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::asio\+::ip\+::tcp\+::socket \& \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client_a157a892bcf5ddc26f3d649fb9d8f4c17}{get\+Socket}} ()
+\begin{DoxyCompactList}\small\item\em Return the client\textquotesingle{}s socket. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_a84537190e6f8109bbeecf4b2c262897f}\label{class_babel_1_1_server_1_1_babel_client_a84537190e6f8109bbeecf4b2c262897f}} 
+void \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client_a84537190e6f8109bbeecf4b2c262897f}{wait\+For\+Datas}} ()
+\begin{DoxyCompactList}\small\item\em Start an asynchronous read. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client_a6374a5f2bc33d90f15c992698f71ad83}{send}} (const \mbox{\hyperlink{namespace_babel_1_1_rfc_ae847b6663accce552abbf548ed89f089}{Babel\+::\+Rfc\+::\+Code}} code, const std\+::vector$<$ std\+::string $>$ \&arguments=\{\})
+\begin{DoxyCompactList}\small\item\em Send packet on the socket. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_a363c076a187750c92cce4040025c13f8}\label{class_babel_1_1_server_1_1_babel_client_a363c076a187750c92cce4040025c13f8}} 
+void {\bfseries set\+Username} (const std\+::string \&name)
+\item 
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_aa0cd65bba1900f85233441c930d2f524}\label{class_babel_1_1_server_1_1_babel_client_aa0cd65bba1900f85233441c930d2f524}} 
+std\+::string {\bfseries get\+Username} () const
+\item 
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_a47dff98f8f4987e83ebcc005b83b1785}\label{class_babel_1_1_server_1_1_babel_client_a47dff98f8f4987e83ebcc005b83b1785}} 
+void {\bfseries set\+Password} (const std\+::string \&password)
+\item 
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_a64f7b1388c4904627f68c35e671df489}\label{class_babel_1_1_server_1_1_babel_client_a64f7b1388c4904627f68c35e671df489}} 
+std\+::string {\bfseries get\+Password} () const
+\item 
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_a38082aedfe30c07342091c464fe94f54}\label{class_babel_1_1_server_1_1_babel_client_a38082aedfe30c07342091c464fe94f54}} 
+void {\bfseries set\+Uuid} (const std\+::string \&uuid)
+\item 
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_a5889039860237ca78a980c9ead845a39}\label{class_babel_1_1_server_1_1_babel_client_a5889039860237ca78a980c9ead845a39}} 
+std\+::string {\bfseries get\+Uuid} () const
+\item 
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_a5b4faa7a4c6fa735727cd92beb0a3292}\label{class_babel_1_1_server_1_1_babel_client_a5b4faa7a4c6fa735727cd92beb0a3292}} 
+void {\bfseries set\+State} (const \mbox{\hyperlink{namespace_babel_1_1_rfc_ab73e7f9d8b3c800197a023e134d85bcb}{Babel\+::\+Rfc\+::\+State}} \&state)
+\item 
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_a49674e6111d0fb54ee27e29f2132856d}\label{class_babel_1_1_server_1_1_babel_client_a49674e6111d0fb54ee27e29f2132856d}} 
+\mbox{\hyperlink{namespace_babel_1_1_rfc_ab73e7f9d8b3c800197a023e134d85bcb}{Babel\+::\+Rfc\+::\+State}} {\bfseries get\+State} () const
+\item 
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_a4286c942e1483b903c25f114f27f3942}\label{class_babel_1_1_server_1_1_babel_client_a4286c942e1483b903c25f114f27f3942}} 
+bool {\bfseries add\+Contact} (const std\+::pair$<$ std\+::string, std\+::string $>$ \&contact)
+\item 
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_ab9cbe924b8829281554720ee9871731c}\label{class_babel_1_1_server_1_1_babel_client_ab9cbe924b8829281554720ee9871731c}} 
+bool {\bfseries add\+Contact} (const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$ \&contacts)
+\item 
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_aed1665ebe165cf7d78668cc90f180c92}\label{class_babel_1_1_server_1_1_babel_client_aed1665ebe165cf7d78668cc90f180c92}} 
+std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ {\bfseries get\+Contacts} () const
+\item 
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_afc1fd1203e95d6249da3ffd0f5b7de98}\label{class_babel_1_1_server_1_1_babel_client_afc1fd1203e95d6249da3ffd0f5b7de98}} 
+void {\bfseries set\+Caller} (const std\+::string \&uuid\+Caller)
+\item 
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_a671beab0a7d190597b2530ec819d6ae7}\label{class_babel_1_1_server_1_1_babel_client_a671beab0a7d190597b2530ec819d6ae7}} 
+std\+::string {\bfseries get\+Caller} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} $>$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client_ac5966640ab3b19cd99842528e90a3b6e}{create}} (boost\+::asio\+::io\+\_\+context \&io\+\_\+context, boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager}{Babel\+::\+Server\+::\+Client\+Manager}} $>$ client\+Manager\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Create a shared pointer to a \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{namespace_babel_1_1_client}{Client}} instance. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_ac5966640ab3b19cd99842528e90a3b6e}\label{class_babel_1_1_server_1_1_babel_client_ac5966640ab3b19cd99842528e90a3b6e}} 
+\index{Babel::Server::BabelClient@{Babel::Server::BabelClient}!create@{create}}
+\index{create@{create}!Babel::Server::BabelClient@{Babel::Server::BabelClient}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$ Babel\+::\+Server\+::\+Babel\+Client\+::create (\begin{DoxyParamCaption}\item[{boost\+::asio\+::io\+\_\+context \&}]{io\+\_\+context,  }\item[{boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager}{Babel\+::\+Server\+::\+Client\+Manager}} $>$}]{client\+Manager\+\_\+ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a shared pointer to a \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} object. 
+
+\begin{DoxyReturn}{Returns}
+Shared pointer to \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_a157a892bcf5ddc26f3d649fb9d8f4c17}\label{class_babel_1_1_server_1_1_babel_client_a157a892bcf5ddc26f3d649fb9d8f4c17}} 
+\index{Babel::Server::BabelClient@{Babel::Server::BabelClient}!getSocket@{getSocket}}
+\index{getSocket@{getSocket}!Babel::Server::BabelClient@{Babel::Server::BabelClient}}
+\doxysubsubsection{\texorpdfstring{getSocket()}{getSocket()}}
+{\footnotesize\ttfamily boost\+::asio\+::ip\+::tcp\+::socket \& Babel\+::\+Server\+::\+Babel\+Client\+::get\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the client\textquotesingle{}s socket. 
+
+\begin{DoxyReturn}{Returns}
+Tcp socket 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_babel_client_a6374a5f2bc33d90f15c992698f71ad83}\label{class_babel_1_1_server_1_1_babel_client_a6374a5f2bc33d90f15c992698f71ad83}} 
+\index{Babel::Server::BabelClient@{Babel::Server::BabelClient}!send@{send}}
+\index{send@{send}!Babel::Server::BabelClient@{Babel::Server::BabelClient}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily void Babel\+::\+Server\+::\+Babel\+Client\+::send (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_babel_1_1_rfc_ae847b6663accce552abbf548ed89f089}{Babel\+::\+Rfc\+::\+Code}}}]{code,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{arguments = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+
+
+Send packet on the socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R\+FC} & code \\
+\hline
+{\em Vector} & of arguments \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+server/networktools/Babel\+Client.\+hpp\item 
+server/networktools/Babel\+Client.\+cpp\end{DoxyCompactItemize}

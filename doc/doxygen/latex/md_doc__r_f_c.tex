@@ -1,0 +1,67 @@
+\hypertarget{md_doc__r_f_c_autotoc_md1}{}\doxysection{Arguments}\label{md_doc__r_f_c_autotoc_md1}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Argument  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Argument  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description   }\\\cline{1-2}
+\endhead
+Command\+ID  &Command ID.   \\\cline{1-2}
+User\+ID  &User ID.   \\\cline{1-2}
+Username  &Username.   \\\cline{1-2}
+Password  &Password.   \\\cline{1-2}
+State  &State (Connected / Diconnected / Calling).   \\\cline{1-2}
+IP  &IP adress.   \\\cline{1-2}
+Port  &Port.   \\\cline{1-2}
+Message  &Message.   \\\cline{1-2}
+Audio\+Data  &Audio\+Data structure.   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md_doc__r_f_c_autotoc_md2}{}\doxysection{Server -\/$>$ Client Requests}\label{md_doc__r_f_c_autotoc_md2}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Request name  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Arguments  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Request name  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Arguments  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description   }\\\cline{1-3}
+\endhead
+U\+N\+K\+N\+O\+WN  &()  &Response if the command previously sent is not recognized.   \\\cline{1-3}
+S\+C\+\_\+\+OK  &(Command\+ID)  &Response if the command previously sent is okay.   \\\cline{1-3}
+S\+C\+\_\+\+E\+R\+R\+OR  &(Command\+ID, message)  &Response if the command previously sent has an error.   \\\cline{1-3}
+S\+C\+\_\+\+D\+E\+L\+E\+TE  &(User\+ID)  &User has been deleted.   \\\cline{1-3}
+S\+C\+\_\+\+U\+S\+ER  &(User\+ID, Username, State)  &Sends user informations.   \\\cline{1-3}
+S\+C\+\_\+\+C\+A\+LL  &(User\+ID, IP, Port)  &Asks for a call to the user.   \\\cline{1-3}
+S\+C\+\_\+\+C\+A\+L\+L\+\_\+\+A\+N\+S\+W\+ER  &(User\+ID, IP, Port)  &Anwsers the call from the user.   \\\cline{1-3}
+S\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+ND  &(User\+ID)  &Ends the call with the user.   \\\cline{1-3}
+S\+C\+\_\+\+C\+O\+N\+T\+A\+CT  &(User\+ID, Username, State)  &Adds the user to the contacts list.   \\\cline{1-3}
+S\+C\+\_\+\+M\+SG  &(User\+ID, Message)  &Sends message to user.   \\\cline{1-3}
+S\+C\+\_\+\+P\+I\+NG  &()  &Pings the client. (Response with C\+S\+\_\+\+O\+K(\+S\+C\+\_\+\+P\+I\+N\+G))   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md_doc__r_f_c_autotoc_md3}{}\doxysection{Client -\/$>$ Server Requests}\label{md_doc__r_f_c_autotoc_md3}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Request name  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Arguments  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Request name  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Arguments  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description   }\\\cline{1-3}
+\endhead
+U\+N\+K\+N\+O\+WN  &()  &Response if the command previously sent is not recognized.   \\\cline{1-3}
+C\+S\+\_\+\+OK  &(Command\+ID)  &Response if the command previously sent is okay.   \\\cline{1-3}
+C\+S\+\_\+\+E\+R\+R\+OR  &(Command\+ID, message)  &Response if the command previously sent has an error.   \\\cline{1-3}
+C\+S\+\_\+\+L\+O\+G\+IN  &(Username, Password)  &Sends login try with username.   \\\cline{1-3}
+C\+S\+\_\+\+L\+O\+G\+O\+UT  &()  &Sends logout from the server.   \\\cline{1-3}
+C\+S\+\_\+\+C\+A\+LL  &(User\+ID, IP, Port)  &Asks for a call to the user.   \\\cline{1-3}
+C\+S\+\_\+\+C\+A\+L\+L\+\_\+\+A\+N\+S\+W\+ER  &(User\+ID, IP, Port)  &Anwsers the call from the user.   \\\cline{1-3}
+C\+S\+\_\+\+C\+A\+L\+L\+\_\+\+E\+ND  &(User\+ID)  &Ends the call with the user.   \\\cline{1-3}
+C\+S\+\_\+\+C\+O\+N\+T\+A\+CT  &(Username)  &Adds the user to the contacts list.   \\\cline{1-3}
+C\+S\+\_\+\+M\+SG  &(User\+ID, Message)  &Sends message to user.   \\\cline{1-3}
+C\+S\+\_\+\+P\+I\+NG  &()  &Pings the server. (Response with S\+C\+\_\+\+O\+K(\+C\+S\+\_\+\+P\+I\+N\+G))   \\\cline{1-3}
+\end{longtabu}

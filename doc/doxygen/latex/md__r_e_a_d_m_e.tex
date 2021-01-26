@@ -1,0 +1,57 @@
+The project consists of a client/server architecture voice over IP application, similar to Skype or Team\+Speak.\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysection{Dependencies}\label{md__r_e_a_d_m_e_autotoc_md5}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{Windows}\label{md__r_e_a_d_m_e_autotoc_md6}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Dependency  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Link / Command   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Dependency  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Link / Command   }\\\cline{1-2}
+\endhead
+Python 3  &\href{https://www.python.org/downloads/}{\texttt{ Python 3}}   \\\cline{1-2}
+Pip  &\href{https://www.liquidweb.com/kb/install-pip-windows/}{\texttt{ pip}}   \\\cline{1-2}
+Conan  &{\ttfamily pip3.\+exe install conan}   \\\cline{1-2}
+C\+Make  &\href{https://cmake.org/download/}{\texttt{ C\+Make}}   \\\cline{1-2}
+Qt Creator 5.\+14.\+2  &\href{https://download.qt.io/official_releases/qt/5.14/5.14.2/}{\texttt{ Qt}}   \\\cline{1-2}
+Doxygen (optional)  &\href{https://www.doxygen.nl/download.html}{\texttt{ Doxygen}}   \\\cline{1-2}
+\end{longtabu}
+
+
+\+:warning\+: {\bfseries{When installing Python 3, be sure to check \char`\"{}\+Add Python 3 to P\+A\+T\+H\char`\"{} (to be able to launch commands).}}
+
+\+:warning\+: {\bfseries{After Qt is installed, be sure to add the path to the Qt\textquotesingle{}s used compiler binaries to the environment variable P\+A\+TH (in order to get access to windeployqt.\+exe).}}
+
+{\bfseries{Example \+: {\ttfamily C\+:/\+Qt/5.14.\+2/msvc2017\+\_\+64/bin} (\href{https://docs.oracle.com/en/database/oracle/r-enterprise/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html\#GUID-DD6F9982-60D5-48F6-8270-A27EC53807D0}{\texttt{ Tutorial \+: Creating or Modifying environment variables}})}}\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{Unix}\label{md__r_e_a_d_m_e_autotoc_md7}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Dependency  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Link / Command (Ubuntu)   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Dependency  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Link / Command (Ubuntu)   }\\\cline{1-2}
+\endhead
+Python 3  &{\ttfamily apt install python3}   \\\cline{1-2}
+Pip  &{\ttfamily apt install python3-\/pip}   \\\cline{1-2}
+Conan  &{\ttfamily pip install conan}   \\\cline{1-2}
+C\+Make  &{\ttfamily apt install cmake}   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysection{Setup \& Build}\label{md__r_e_a_d_m_e_autotoc_md8}
+First, we need to setup the project in order to build it, then we simply build it (for both Windows and Unix Systems).
+
+If you\textquotesingle{}re interested for more details, Windows building process on this project has more necessary steps, Qt on Windows manages dependencies differently and so it needs an application that deploy applications ({\bfseries{windeployqt.\+exe}}).\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysubsection{Windows}\label{md__r_e_a_d_m_e_autotoc_md9}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ ./windows\_setup.bat}
+\DoxyCodeLine{\$ ./windows\_build.bat}
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysubsection{Unix}\label{md__r_e_a_d_m_e_autotoc_md10}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ ./unix\_setup.sh}
+\DoxyCodeLine{\$ ./unix\_build.sh}
+\end{DoxyCode}
+ 

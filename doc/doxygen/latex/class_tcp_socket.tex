@@ -1,0 +1,67 @@
+\hypertarget{class_tcp_socket}{}\doxysection{Tcp\+Socket Class Reference}
+\label{class_tcp_socket}\index{TcpSocket@{TcpSocket}}
+Inheritance diagram for Tcp\+Socket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_tcp_socket}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tcp_socket_ae31d3fe83e4184cff819700e2fdd5f20}\label{class_tcp_socket_ae31d3fe83e4184cff819700e2fdd5f20}} 
+void {\bfseries data\+Received} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tcp_socket_a83dfb42946c826eec6ec66d2f0b6dacf}\label{class_tcp_socket_a83dfb42946c826eec6ec66d2f0b6dacf}} 
+{\bfseries Tcp\+Socket} (const Q\+String \&ip\+Adress, const quint16 port)
+\item 
+\mbox{\Hypertarget{class_tcp_socket_ac633b3c5c947d711e8fe9169142dc663}\label{class_tcp_socket_ac633b3c5c947d711e8fe9169142dc663}} 
+void {\bfseries send\+Request\+\_\+\+Unknown} ()
+\item 
+\mbox{\Hypertarget{class_tcp_socket_a749128b5e08df73ec78c892ded2ec2f8}\label{class_tcp_socket_a749128b5e08df73ec78c892ded2ec2f8}} 
+void {\bfseries send\+Request\+\_\+\+Ok} (const Babel\+::\+Rfc\+::\+Code command\+Id)
+\item 
+\mbox{\Hypertarget{class_tcp_socket_aef9b6de98316987156682411895bc40d}\label{class_tcp_socket_aef9b6de98316987156682411895bc40d}} 
+void {\bfseries send\+Request\+\_\+\+Error} (const Babel\+::\+Rfc\+::\+Code command\+Id, const std\+::string \&message)
+\item 
+\mbox{\Hypertarget{class_tcp_socket_ada28b4eaf89ae25f9c8f28695de330d6}\label{class_tcp_socket_ada28b4eaf89ae25f9c8f28695de330d6}} 
+void {\bfseries send\+Request\+\_\+\+Login} (const std\+::string \&username, const std\+::string \&password)
+\item 
+\mbox{\Hypertarget{class_tcp_socket_abad2f28acc067ba49e88ff7decff2c72}\label{class_tcp_socket_abad2f28acc067ba49e88ff7decff2c72}} 
+void {\bfseries send\+Request\+\_\+\+Logout} ()
+\item 
+\mbox{\Hypertarget{class_tcp_socket_a08f2c4e8ba4dd454bfff5ee50906ac68}\label{class_tcp_socket_a08f2c4e8ba4dd454bfff5ee50906ac68}} 
+void {\bfseries send\+Request\+\_\+\+Call} (const std\+::string \&user\+Id, const std\+::string \&ip, const uint16\+\_\+t port)
+\item 
+\mbox{\Hypertarget{class_tcp_socket_ae5a1b747b69745561dd58f93d296aa9c}\label{class_tcp_socket_ae5a1b747b69745561dd58f93d296aa9c}} 
+void {\bfseries send\+Request\+\_\+\+Call\+Answer} (const std\+::string \&user\+Id, const std\+::string \&ip, const uint16\+\_\+t port)
+\item 
+\mbox{\Hypertarget{class_tcp_socket_a4a16709571c8a54e9ac2f7c8648e012a}\label{class_tcp_socket_a4a16709571c8a54e9ac2f7c8648e012a}} 
+void {\bfseries send\+Request\+\_\+\+Call\+End} (const std\+::string \&user\+Id)
+\item 
+\mbox{\Hypertarget{class_tcp_socket_a60d5b2faf31e02d0cf41ff142cc2fd4c}\label{class_tcp_socket_a60d5b2faf31e02d0cf41ff142cc2fd4c}} 
+void {\bfseries send\+Request\+\_\+\+Contact} (const std\+::string \&username)
+\item 
+\mbox{\Hypertarget{class_tcp_socket_a2f46692432538812de13b64436da34f5}\label{class_tcp_socket_a2f46692432538812de13b64436da34f5}} 
+void {\bfseries send\+Request\+\_\+\+Msg} (const std\+::string \&user\+Id, const std\+::string \&message)
+\item 
+\mbox{\Hypertarget{class_tcp_socket_ad68af334c29a44fe0729d704ba2751d4}\label{class_tcp_socket_ad68af334c29a44fe0729d704ba2751d4}} 
+void {\bfseries send\+Request\+\_\+\+Ping} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tcp_socket_a2fed1a3ba8bad5cbc669f19caf5277d0}\label{class_tcp_socket_a2fed1a3ba8bad5cbc669f19caf5277d0}} 
+Q\+List$<$ \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary}{Babel\+::\+Common\+::\+Packets\+Data\+Binary}} $>$ {\bfseries requests}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/\+U\+I/Tcp\+Socket.\+hpp\item 
+build/client/\+U\+I/moc\+\_\+\+Tcp\+Socket.\+cpp\item 
+client/\+U\+I/Tcp\+Socket.\+cpp\end{DoxyCompactItemize}

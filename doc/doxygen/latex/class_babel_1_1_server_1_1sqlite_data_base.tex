@@ -1,0 +1,140 @@
+\hypertarget{class_babel_1_1_server_1_1sqlite_data_base}{}\doxysection{Babel\+::Server\+::sqlite\+Data\+Base Class Reference}
+\label{class_babel_1_1_server_1_1sqlite_data_base}\index{Babel::Server::sqliteDataBase@{Babel::Server::sqliteDataBase}}
+
+
+S\+Q\+Lite implementation.  
+
+
+
+
+{\ttfamily \#include $<$sqlite\+Data\+Base.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_babel_1_1_server_1_1sqlite_data_base_1_1datas}{datas}}
+\begin{DoxyCompactList}\small\item\em Used to return data from the S\+Q\+Lite3 callback function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_babel_1_1_server_1_1sqlite_data_base_a4f48ebfd0df8cf1ac5e95724c4d897ea}{add\+Account}} (const std\+::string \&uuid, const std\+::string \&username, const std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Add an account to the database. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_server_1_1sqlite_data_base_abeb8da94d9e6a03422d73299a4e0520f}{remove\+Account}} (const std\+::string \&username)
+\begin{DoxyCompactList}\small\item\em Remove user from the database. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_server_1_1sqlite_data_base_aa2d825e7df59821c168f7e934c20fac4}\label{class_babel_1_1_server_1_1sqlite_data_base_aa2d825e7df59821c168f7e934c20fac4}} 
+void \mbox{\hyperlink{class_babel_1_1_server_1_1sqlite_data_base_aa2d825e7df59821c168f7e934c20fac4}{print}} ()
+\begin{DoxyCompactList}\small\item\em Print the database. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_babel_1_1_server_1_1sqlite_data_base_a9084b98c86819309e26668a86fb3a0d4}{get\+Account}} (const std\+::string \&username)
+\begin{DoxyCompactList}\small\item\em Get account matching the given username from the database. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_server_1_1sqlite_data_base_a9e9e879be202ee488081a1ff6f28a6dc}{add\+Contact}} (const std\+::string \&uuid\+User, const std\+::pair$<$ std\+::string, std\+::string $>$ \&contact)
+\begin{DoxyCompactList}\small\item\em Add user to the contact list. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \mbox{\hyperlink{class_babel_1_1_server_1_1sqlite_data_base_a6cf6f41e8d2432239cef5dd592b9732a}{get\+Contacts}} (const std\+::string \&uuid\+User) const
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s contacts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+S\+Q\+Lite implementation. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1sqlite_data_base_a4f48ebfd0df8cf1ac5e95724c4d897ea}\label{class_babel_1_1_server_1_1sqlite_data_base_a4f48ebfd0df8cf1ac5e95724c4d897ea}} 
+\index{Babel::Server::sqliteDataBase@{Babel::Server::sqliteDataBase}!addAccount@{addAccount}}
+\index{addAccount@{addAccount}!Babel::Server::sqliteDataBase@{Babel::Server::sqliteDataBase}}
+\doxysubsubsection{\texorpdfstring{addAccount()}{addAccount()}}
+{\footnotesize\ttfamily bool Babel\+::\+Server\+::sqlite\+Data\+Base\+::add\+Account (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uuid,  }\item[{const std\+::string \&}]{username,  }\item[{const std\+::string \&}]{password }\end{DoxyParamCaption})}
+
+
+
+Add an account to the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & uuid \\
+\hline
+{\em string} & username \\
+\hline
+{\em string} & password \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean saying if everything went right 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1sqlite_data_base_a9e9e879be202ee488081a1ff6f28a6dc}\label{class_babel_1_1_server_1_1sqlite_data_base_a9e9e879be202ee488081a1ff6f28a6dc}} 
+\index{Babel::Server::sqliteDataBase@{Babel::Server::sqliteDataBase}!addContact@{addContact}}
+\index{addContact@{addContact}!Babel::Server::sqliteDataBase@{Babel::Server::sqliteDataBase}}
+\doxysubsubsection{\texorpdfstring{addContact()}{addContact()}}
+{\footnotesize\ttfamily bool Babel\+::\+Server\+::sqlite\+Data\+Base\+::add\+Contact (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uuid\+User,  }\item[{const std\+::pair$<$ std\+::string, std\+::string $>$ \&}]{contact }\end{DoxyParamCaption})}
+
+
+
+Add user to the contact list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & uuid\+User \\
+\hline
+{\em A} & pair containing the uui\&username of the contact \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean saying if everything went right 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1sqlite_data_base_a9084b98c86819309e26668a86fb3a0d4}\label{class_babel_1_1_server_1_1sqlite_data_base_a9084b98c86819309e26668a86fb3a0d4}} 
+\index{Babel::Server::sqliteDataBase@{Babel::Server::sqliteDataBase}!getAccount@{getAccount}}
+\index{getAccount@{getAccount}!Babel::Server::sqliteDataBase@{Babel::Server::sqliteDataBase}}
+\doxysubsubsection{\texorpdfstring{getAccount()}{getAccount()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Babel\+::\+Server\+::sqlite\+Data\+Base\+::get\+Account (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username }\end{DoxyParamCaption})}
+
+
+
+Get account matching the given username from the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & username \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of string containing user\textquotesingle{}s info 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1sqlite_data_base_a6cf6f41e8d2432239cef5dd592b9732a}\label{class_babel_1_1_server_1_1sqlite_data_base_a6cf6f41e8d2432239cef5dd592b9732a}} 
+\index{Babel::Server::sqliteDataBase@{Babel::Server::sqliteDataBase}!getContacts@{getContacts}}
+\index{getContacts@{getContacts}!Babel::Server::sqliteDataBase@{Babel::Server::sqliteDataBase}}
+\doxysubsubsection{\texorpdfstring{getContacts()}{getContacts()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ Babel\+::\+Server\+::sqlite\+Data\+Base\+::get\+Contacts (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uuid\+User }\end{DoxyParamCaption}) const}
+
+
+
+Returns the user\textquotesingle{}s contacts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & uuid\+User \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of pair of string containing all the uuid\&usernames of the contacts 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1sqlite_data_base_abeb8da94d9e6a03422d73299a4e0520f}\label{class_babel_1_1_server_1_1sqlite_data_base_abeb8da94d9e6a03422d73299a4e0520f}} 
+\index{Babel::Server::sqliteDataBase@{Babel::Server::sqliteDataBase}!removeAccount@{removeAccount}}
+\index{removeAccount@{removeAccount}!Babel::Server::sqliteDataBase@{Babel::Server::sqliteDataBase}}
+\doxysubsubsection{\texorpdfstring{removeAccount()}{removeAccount()}}
+{\footnotesize\ttfamily bool Babel\+::\+Server\+::sqlite\+Data\+Base\+::remove\+Account (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username }\end{DoxyParamCaption})}
+
+
+
+Remove user from the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & username \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean saying if everything went right 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+server/database/sqlite\+Data\+Base.\+hpp\item 
+server/database/sqlite\+Data\+Base.\+cpp\end{DoxyCompactItemize}

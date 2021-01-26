@@ -1,0 +1,330 @@
+\hypertarget{class_babel_1_1_server_1_1_client_manager}{}\doxysection{Babel\+::Server\+::Client\+Manager Class Reference}
+\label{class_babel_1_1_server_1_1_client_manager}\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+
+
+Manage clients and interact with database.  
+
+
+
+
+{\ttfamily \#include $<$Client\+Manager.\+hpp$>$}
+
+Inheritance diagram for Babel\+::Server\+::Client\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_babel_1_1_server_1_1_client_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager_a7895c080a55f3fb69086bc751c3f0233}{connect}} (boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} $>$ client\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Add \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} to the \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager}{Client\+Manager}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager_a4d8ec6b6c8814713cb0973c06f6234a1}{disconnect}} (boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} $>$ client\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Delete \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} from the \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager}{Client\+Manager}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager_ab806281f0a9ea11c357f043db79b0e50}{manage\+Command}} (boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} $>$ babel\+Client, const \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary}{Babel\+::\+Common\+::\+Packets\+Data\+Binary}} \&packet)
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} from its uuid. \end{DoxyCompactList}\item 
+boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} $>$ \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager_a3e847121888b2cb710de3b8008a76815}{get\+Client\+By\+Username}} (const std\+::string \&username)
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} form its username. \end{DoxyCompactList}\item 
+boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} $>$ \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager_aafc8d882ff33a6e4b50e51d65ffecc03}{get\+Client\+By\+Uuid}} (const std\+::string \&uuid)
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} from its uuid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager_a4d35347fe051b89b095ffeabbcbec2f0}{send\+State\+To\+Contacts}} (boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$ babel\+Client)
+\begin{DoxyCompactList}\small\item\em Send user\textquotesingle{}s state to its contact. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager_a347b5366af0f346a729c0df47fe7e246}{get\+Contacts\+States}} (boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$ babel\+Client)
+\begin{DoxyCompactList}\small\item\em Get user contacts states. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager_ae55787f73a846b594b3df6e25f10d754}{login}} (boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$ babel\+Client, std\+::vector$<$ std\+::string $>$ args)
+\begin{DoxyCompactList}\small\item\em Login manager. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager_a4570e415bac560bef37901f245b0b620}{logout}} (boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$ babel\+Client, std\+::vector$<$ std\+::string $>$ args)
+\begin{DoxyCompactList}\small\item\em Logout manager. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager_a9315a931207254bda228dc6fad864f6e}{call}} (boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$ babel\+Client, std\+::vector$<$ std\+::string $>$ args)
+\begin{DoxyCompactList}\small\item\em Call manager. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager_a0e49c750361bfa2f5b45295b8327f6ec}{call\+Answer}} (boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$ babel\+Client, std\+::vector$<$ std\+::string $>$ args)
+\begin{DoxyCompactList}\small\item\em Call\+Answer manager. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager_ac4cae61cea13a4e748c8d6fa0b3ce3a6}{call\+End}} (boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$ babel\+Client, std\+::vector$<$ std\+::string $>$ args)
+\begin{DoxyCompactList}\small\item\em Call\+End manager. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager_ae99fb1f3880e3a93b223ac78f1b6c77d}{contact}} (boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$ babel\+Client, std\+::vector$<$ std\+::string $>$ args)
+\begin{DoxyCompactList}\small\item\em Contact manager. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager_a1af393ad627e4cb56b63baedf19b5ca2}{message}} (boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$ babel\+Client, std\+::vector$<$ std\+::string $>$ args)
+\begin{DoxyCompactList}\small\item\em Message manager. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager_aac12ad14f11aeb00ae9302e04cfee1b5}{ping}} (boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$ babel\+Client, std\+::vector$<$ std\+::string $>$ args)
+\begin{DoxyCompactList}\small\item\em Ping manager. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager_ae269a9e5db24e39b731437a2e8ced1ef}{error}} (boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$ babel\+Client, std\+::vector$<$ std\+::string $>$ args)
+\begin{DoxyCompactList}\small\item\em Error manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manage clients and interact with database. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_client_manager_a9315a931207254bda228dc6fad864f6e}\label{class_babel_1_1_server_1_1_client_manager_a9315a931207254bda228dc6fad864f6e}} 
+\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}!call@{call}}
+\index{call@{call}!Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily bool Babel\+::\+Server\+::\+Client\+Manager\+::call (\begin{DoxyParamCaption}\item[{boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$}]{babel\+Client,  }\item[{std\+::vector$<$ std\+::string $>$}]{args }\end{DoxyParamCaption})}
+
+
+
+Call manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shared} & pointer to the \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} \\
+\hline
+{\em Vector} & of string containing arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_client_manager_a0e49c750361bfa2f5b45295b8327f6ec}\label{class_babel_1_1_server_1_1_client_manager_a0e49c750361bfa2f5b45295b8327f6ec}} 
+\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}!callAnswer@{callAnswer}}
+\index{callAnswer@{callAnswer}!Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+\doxysubsubsection{\texorpdfstring{callAnswer()}{callAnswer()}}
+{\footnotesize\ttfamily bool Babel\+::\+Server\+::\+Client\+Manager\+::call\+Answer (\begin{DoxyParamCaption}\item[{boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$}]{babel\+Client,  }\item[{std\+::vector$<$ std\+::string $>$}]{args }\end{DoxyParamCaption})}
+
+
+
+Call\+Answer manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shared} & pointer to the \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} \\
+\hline
+{\em Vector} & of string containing arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_client_manager_ac4cae61cea13a4e748c8d6fa0b3ce3a6}\label{class_babel_1_1_server_1_1_client_manager_ac4cae61cea13a4e748c8d6fa0b3ce3a6}} 
+\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}!callEnd@{callEnd}}
+\index{callEnd@{callEnd}!Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+\doxysubsubsection{\texorpdfstring{callEnd()}{callEnd()}}
+{\footnotesize\ttfamily bool Babel\+::\+Server\+::\+Client\+Manager\+::call\+End (\begin{DoxyParamCaption}\item[{boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$}]{babel\+Client,  }\item[{std\+::vector$<$ std\+::string $>$}]{args }\end{DoxyParamCaption})}
+
+
+
+Call\+End manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shared} & pointer to the \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} \\
+\hline
+{\em Vector} & of string containing arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_client_manager_a7895c080a55f3fb69086bc751c3f0233}\label{class_babel_1_1_server_1_1_client_manager_a7895c080a55f3fb69086bc751c3f0233}} 
+\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}!connect@{connect}}
+\index{connect@{connect}!Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily void Babel\+::\+Server\+::\+Client\+Manager\+::connect (\begin{DoxyParamCaption}\item[{boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} $>$}]{client\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Add \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} to the \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager}{Client\+Manager}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shared} & pointer to the \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_client_manager_ae99fb1f3880e3a93b223ac78f1b6c77d}\label{class_babel_1_1_server_1_1_client_manager_ae99fb1f3880e3a93b223ac78f1b6c77d}} 
+\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}!contact@{contact}}
+\index{contact@{contact}!Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+\doxysubsubsection{\texorpdfstring{contact()}{contact()}}
+{\footnotesize\ttfamily bool Babel\+::\+Server\+::\+Client\+Manager\+::contact (\begin{DoxyParamCaption}\item[{boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$}]{babel\+Client,  }\item[{std\+::vector$<$ std\+::string $>$}]{args }\end{DoxyParamCaption})}
+
+
+
+Contact manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shared} & pointer to the \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} \\
+\hline
+{\em Vector} & of string containing arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_client_manager_a4d8ec6b6c8814713cb0973c06f6234a1}\label{class_babel_1_1_server_1_1_client_manager_a4d8ec6b6c8814713cb0973c06f6234a1}} 
+\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily void Babel\+::\+Server\+::\+Client\+Manager\+::disconnect (\begin{DoxyParamCaption}\item[{boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} $>$}]{client\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Delete \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} from the \mbox{\hyperlink{class_babel_1_1_server_1_1_client_manager}{Client\+Manager}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shared} & pointer to the \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_client_manager_ae269a9e5db24e39b731437a2e8ced1ef}\label{class_babel_1_1_server_1_1_client_manager_ae269a9e5db24e39b731437a2e8ced1ef}} 
+\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}!error@{error}}
+\index{error@{error}!Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily bool Babel\+::\+Server\+::\+Client\+Manager\+::error (\begin{DoxyParamCaption}\item[{boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$}]{babel\+Client,  }\item[{std\+::vector$<$ std\+::string $>$}]{args }\end{DoxyParamCaption})}
+
+
+
+Error manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shared} & pointer to the \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} \\
+\hline
+{\em Vector} & of string containing arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_client_manager_a3e847121888b2cb710de3b8008a76815}\label{class_babel_1_1_server_1_1_client_manager_a3e847121888b2cb710de3b8008a76815}} 
+\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}!getClientByUsername@{getClientByUsername}}
+\index{getClientByUsername@{getClientByUsername}!Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+\doxysubsubsection{\texorpdfstring{getClientByUsername()}{getClientByUsername()}}
+{\footnotesize\ttfamily boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$ Babel\+::\+Server\+::\+Client\+Manager\+::get\+Client\+By\+Username (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username }\end{DoxyParamCaption})}
+
+
+
+Get \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} form its username. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & username \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shared pointer to the \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_client_manager_aafc8d882ff33a6e4b50e51d65ffecc03}\label{class_babel_1_1_server_1_1_client_manager_aafc8d882ff33a6e4b50e51d65ffecc03}} 
+\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}!getClientByUuid@{getClientByUuid}}
+\index{getClientByUuid@{getClientByUuid}!Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+\doxysubsubsection{\texorpdfstring{getClientByUuid()}{getClientByUuid()}}
+{\footnotesize\ttfamily boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$ Babel\+::\+Server\+::\+Client\+Manager\+::get\+Client\+By\+Uuid (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uuid }\end{DoxyParamCaption})}
+
+
+
+Get \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} from its uuid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & uuid \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shared pointer to the \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_client_manager_a347b5366af0f346a729c0df47fe7e246}\label{class_babel_1_1_server_1_1_client_manager_a347b5366af0f346a729c0df47fe7e246}} 
+\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}!getContactsStates@{getContactsStates}}
+\index{getContactsStates@{getContactsStates}!Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+\doxysubsubsection{\texorpdfstring{getContactsStates()}{getContactsStates()}}
+{\footnotesize\ttfamily void Babel\+::\+Server\+::\+Client\+Manager\+::get\+Contacts\+States (\begin{DoxyParamCaption}\item[{boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$}]{babel\+Client }\end{DoxyParamCaption})}
+
+
+
+Get user contacts states. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shared} & pointer to the \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_client_manager_ae55787f73a846b594b3df6e25f10d754}\label{class_babel_1_1_server_1_1_client_manager_ae55787f73a846b594b3df6e25f10d754}} 
+\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}!login@{login}}
+\index{login@{login}!Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily bool Babel\+::\+Server\+::\+Client\+Manager\+::login (\begin{DoxyParamCaption}\item[{boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$}]{babel\+Client,  }\item[{std\+::vector$<$ std\+::string $>$}]{args }\end{DoxyParamCaption})}
+
+
+
+Login manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shared} & pointer to the \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} \\
+\hline
+{\em Vector} & of string containing arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_client_manager_a4570e415bac560bef37901f245b0b620}\label{class_babel_1_1_server_1_1_client_manager_a4570e415bac560bef37901f245b0b620}} 
+\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}!logout@{logout}}
+\index{logout@{logout}!Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+\doxysubsubsection{\texorpdfstring{logout()}{logout()}}
+{\footnotesize\ttfamily bool Babel\+::\+Server\+::\+Client\+Manager\+::logout (\begin{DoxyParamCaption}\item[{boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$}]{babel\+Client,  }\item[{std\+::vector$<$ std\+::string $>$}]{args }\end{DoxyParamCaption})}
+
+
+
+Logout manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shared} & pointer to the \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} \\
+\hline
+{\em Vector} & of string containing arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_client_manager_ab806281f0a9ea11c357f043db79b0e50}\label{class_babel_1_1_server_1_1_client_manager_ab806281f0a9ea11c357f043db79b0e50}} 
+\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}!manageCommand@{manageCommand}}
+\index{manageCommand@{manageCommand}!Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+\doxysubsubsection{\texorpdfstring{manageCommand()}{manageCommand()}}
+{\footnotesize\ttfamily void Babel\+::\+Server\+::\+Client\+Manager\+::manage\+Command (\begin{DoxyParamCaption}\item[{boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} $>$}]{babel\+Client,  }\item[{const \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary}{Babel\+::\+Common\+::\+Packets\+Data\+Binary}} \&}]{packet }\end{DoxyParamCaption})}
+
+
+
+Get \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} from its uuid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shared} & pointer to the \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} \\
+\hline
+{\em Packets\+Data\+Binary} & packet \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_client_manager_a1af393ad627e4cb56b63baedf19b5ca2}\label{class_babel_1_1_server_1_1_client_manager_a1af393ad627e4cb56b63baedf19b5ca2}} 
+\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}!message@{message}}
+\index{message@{message}!Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+\doxysubsubsection{\texorpdfstring{message()}{message()}}
+{\footnotesize\ttfamily bool Babel\+::\+Server\+::\+Client\+Manager\+::message (\begin{DoxyParamCaption}\item[{boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$}]{babel\+Client,  }\item[{std\+::vector$<$ std\+::string $>$}]{args }\end{DoxyParamCaption})}
+
+
+
+Message manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shared} & pointer to the \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} \\
+\hline
+{\em Vector} & of string containing arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_client_manager_aac12ad14f11aeb00ae9302e04cfee1b5}\label{class_babel_1_1_server_1_1_client_manager_aac12ad14f11aeb00ae9302e04cfee1b5}} 
+\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}!ping@{ping}}
+\index{ping@{ping}!Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+\doxysubsubsection{\texorpdfstring{ping()}{ping()}}
+{\footnotesize\ttfamily bool Babel\+::\+Server\+::\+Client\+Manager\+::ping (\begin{DoxyParamCaption}\item[{boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$}]{babel\+Client,  }\item[{std\+::vector$<$ std\+::string $>$}]{args }\end{DoxyParamCaption})}
+
+
+
+Ping manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shared} & pointer to the \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} \\
+\hline
+{\em Vector} & of string containing arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_client_manager_a4d35347fe051b89b095ffeabbcbec2f0}\label{class_babel_1_1_server_1_1_client_manager_a4d35347fe051b89b095ffeabbcbec2f0}} 
+\index{Babel::Server::ClientManager@{Babel::Server::ClientManager}!sendStateToContacts@{sendStateToContacts}}
+\index{sendStateToContacts@{sendStateToContacts}!Babel::Server::ClientManager@{Babel::Server::ClientManager}}
+\doxysubsubsection{\texorpdfstring{sendStateToContacts()}{sendStateToContacts()}}
+{\footnotesize\ttfamily void Babel\+::\+Server\+::\+Client\+Manager\+::send\+State\+To\+Contacts (\begin{DoxyParamCaption}\item[{boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+::\+Server\+::\+Babel\+Client}} $>$}]{babel\+Client }\end{DoxyParamCaption})}
+
+
+
+Send user\textquotesingle{}s state to its contact. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shared} & pointer to the \mbox{\hyperlink{class_babel_1_1_server_1_1_babel_client}{Babel\+Client}} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+server/networktools/Client\+Manager.\+hpp\item 
+server/networktools/Client\+Manager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,204 @@
+\hypertarget{class_babel_1_1_common_1_1_packets_data_binary}{}\doxysection{Babel\+::Common\+::Packets\+Data\+Binary Class Reference}
+\label{class_babel_1_1_common_1_1_packets_data_binary}\index{Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}}
+
+
+Contains command and parameters of the babel commands. This class is meant to be used for binary communication between the server and the clients.  
+
+
+
+
+{\ttfamily \#include $<$Packets\+Data\+Binary.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary_a1ac6ec2f34ff0a9e02c0870a8ee54082}{Packets\+Data\+Binary}} (\mbox{\hyperlink{namespace_babel_1_1_rfc_ae847b6663accce552abbf548ed89f089}{Babel\+::\+Rfc\+::\+Code}} Command\+Type=Babel\+::\+Rfc\+::\+Code\+::\+U\+N\+K\+N\+O\+WN, const std\+::vector$<$ std\+::string $>$ \&args=std\+::vector$<$ std\+::string $>$())
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary_afcb229f5b77d0b55bb20d0a08195241b}{get\+Arguments}} () const
+\begin{DoxyCompactList}\small\item\em Returns arguments. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary_ab2ebb88a52202cda0dcdb683e4c988ba}{set\+Arguments}} (const std\+::vector$<$ std\+::string $>$ \&Argumentsto\+Set)
+\begin{DoxyCompactList}\small\item\em Sets the arguments. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_babel_1_1_rfc_ae847b6663accce552abbf548ed89f089}{Babel\+::\+Rfc\+::\+Code}} \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary_a59345d792c0a6f890ebcf3b97faed15d}{get\+Command\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Returns the command code. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary_a90a671c23e84d9c0b2608d0ede0b56cc}{get\+Number\+Of\+Arguments}} () const
+\begin{DoxyCompactList}\small\item\em get\+Number\+Of\+Arguments \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary_aaada37c7bc03ce784b1d408467a7358d}{set\+Command\+Type}} (\mbox{\hyperlink{namespace_babel_1_1_rfc_ae847b6663accce552abbf548ed89f089}{Babel\+::\+Rfc\+::\+Code}} Command\+Type)
+\begin{DoxyCompactList}\small\item\em Sets command code. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary_a5b458b3b9b77d4ffb1ba57a95c37a429}{get\+Bytes\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Returns the data size in bytes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary_ac20bea616a4e06ea17e51c38e6ad5e3c}{set\+Bytes\+Size}} (size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Sets the data size in bytes. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{struct_babel_1_1_common_1_1_packets_data_binary_serialized}{Packets\+Data\+Binary\+Serialized}} \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary_aba5a6683873aa68f2ff9e7303255a552}{serialize\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Returns a serialized version of \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary}{Packets\+Data\+Binary}}, it\textquotesingle{}s meant to be sent by a socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary}{Packets\+Data\+Binary}} \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary_abf4295d88b5bd88c5c2c26c90fc44175}{deserialize\+Data}} (void $\ast$data, size\+\_\+t read\+Data)
+\begin{DoxyCompactList}\small\item\em Returns a deserialized version of \textquotesingle{}data\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_common_1_1_packets_data_binary_a88288de83afa6c7a2df3baaf270317d9}\label{class_babel_1_1_common_1_1_packets_data_binary_a88288de83afa6c7a2df3baaf270317d9}} 
+static const size\+\_\+t {\bfseries Packets\+Data\+Binary\+Serialized\+Minimum\+Size} = sizeof(int) + sizeof(int) + sizeof(int) + sizeof(int) $\ast$ max\+Arguments + sizeof(char) $\ast$ max\+Arguments $\ast$ max\+String\+Size
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains command and parameters of the babel commands. This class is meant to be used for binary communication between the server and the clients. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_babel_1_1_common_1_1_packets_data_binary_a1ac6ec2f34ff0a9e02c0870a8ee54082}\label{class_babel_1_1_common_1_1_packets_data_binary_a1ac6ec2f34ff0a9e02c0870a8ee54082}} 
+\index{Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}!PacketsDataBinary@{PacketsDataBinary}}
+\index{PacketsDataBinary@{PacketsDataBinary}!Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}}
+\doxysubsubsection{\texorpdfstring{PacketsDataBinary()}{PacketsDataBinary()}}
+{\footnotesize\ttfamily Babel\+::\+Common\+::\+Packets\+Data\+Binary\+::\+Packets\+Data\+Binary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_babel_1_1_rfc_ae847b6663accce552abbf548ed89f089}{Babel\+::\+Rfc\+::\+Code}}}]{Command\+Type = {\ttfamily Babel\+:\+:Rfc\+:\+:Code\+:\+:UNKNOWN},  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{args = {\ttfamily std\+:\+:vector$<$std\+:\+:string$>$()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{namespace_babel_1_1_rfc_ae847b6663accce552abbf548ed89f089}{Babel\+::\+Rfc\+::\+Code}}} & Command\+Type, command code. \\
+\hline
+{\em const} & std\+::vector$<$std\+::string$>$ \& args, contains arguments. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_babel_1_1_common_1_1_packets_data_binary_abf4295d88b5bd88c5c2c26c90fc44175}\label{class_babel_1_1_common_1_1_packets_data_binary_abf4295d88b5bd88c5c2c26c90fc44175}} 
+\index{Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}!deserializeData@{deserializeData}}
+\index{deserializeData@{deserializeData}!Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}}
+\doxysubsubsection{\texorpdfstring{deserializeData()}{deserializeData()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary}{Packets\+Data\+Binary}} Babel\+::\+Common\+::\+Packets\+Data\+Binary\+::deserialize\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{data,  }\item[{size\+\_\+t}]{read\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns a deserialized version of \textquotesingle{}data\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & $\ast$ data \\
+\hline
+{\em size\+\_\+t} & read\+Data (bytes of read data) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary}{Packets\+Data\+Binary}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_common_1_1_packets_data_binary_afcb229f5b77d0b55bb20d0a08195241b}\label{class_babel_1_1_common_1_1_packets_data_binary_afcb229f5b77d0b55bb20d0a08195241b}} 
+\index{Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}!getArguments@{getArguments}}
+\index{getArguments@{getArguments}!Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}}
+\doxysubsubsection{\texorpdfstring{getArguments()}{getArguments()}}
+{\footnotesize\ttfamily const std\+::vector$<$std\+::string$>$\& Babel\+::\+Common\+::\+Packets\+Data\+Binary\+::get\+Arguments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns arguments. 
+
+\begin{DoxyReturn}{Returns}
+const std\+::vector$<$std\+::string$>$ \& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_common_1_1_packets_data_binary_a5b458b3b9b77d4ffb1ba57a95c37a429}\label{class_babel_1_1_common_1_1_packets_data_binary_a5b458b3b9b77d4ffb1ba57a95c37a429}} 
+\index{Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}!getBytesSize@{getBytesSize}}
+\index{getBytesSize@{getBytesSize}!Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}}
+\doxysubsubsection{\texorpdfstring{getBytesSize()}{getBytesSize()}}
+{\footnotesize\ttfamily size\+\_\+t Babel\+::\+Common\+::\+Packets\+Data\+Binary\+::get\+Bytes\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the data size in bytes. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_common_1_1_packets_data_binary_a59345d792c0a6f890ebcf3b97faed15d}\label{class_babel_1_1_common_1_1_packets_data_binary_a59345d792c0a6f890ebcf3b97faed15d}} 
+\index{Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}!getCommandType@{getCommandType}}
+\index{getCommandType@{getCommandType}!Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}}
+\doxysubsubsection{\texorpdfstring{getCommandType()}{getCommandType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_babel_1_1_rfc_ae847b6663accce552abbf548ed89f089}{Babel\+::\+Rfc\+::\+Code}} Babel\+::\+Common\+::\+Packets\+Data\+Binary\+::get\+Command\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the command code. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{namespace_babel_1_1_rfc_ae847b6663accce552abbf548ed89f089}{Babel\+::\+Rfc\+::\+Code}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_common_1_1_packets_data_binary_a90a671c23e84d9c0b2608d0ede0b56cc}\label{class_babel_1_1_common_1_1_packets_data_binary_a90a671c23e84d9c0b2608d0ede0b56cc}} 
+\index{Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}!getNumberOfArguments@{getNumberOfArguments}}
+\index{getNumberOfArguments@{getNumberOfArguments}!Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}}
+\doxysubsubsection{\texorpdfstring{getNumberOfArguments()}{getNumberOfArguments()}}
+{\footnotesize\ttfamily size\+\_\+t Babel\+::\+Common\+::\+Packets\+Data\+Binary\+::get\+Number\+Of\+Arguments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Number\+Of\+Arguments 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_common_1_1_packets_data_binary_aba5a6683873aa68f2ff9e7303255a552}\label{class_babel_1_1_common_1_1_packets_data_binary_aba5a6683873aa68f2ff9e7303255a552}} 
+\index{Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}!serializeData@{serializeData}}
+\index{serializeData@{serializeData}!Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}}
+\doxysubsubsection{\texorpdfstring{serializeData()}{serializeData()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_babel_1_1_common_1_1_packets_data_binary_serialized}{Packets\+Data\+Binary\+Serialized}} Babel\+::\+Common\+::\+Packets\+Data\+Binary\+::serialize\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a serialized version of \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary}{Packets\+Data\+Binary}}, it\textquotesingle{}s meant to be sent by a socket. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_babel_1_1_common_1_1_packets_data_binary_serialized}{Packets\+Data\+Binary\+Serialized}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_common_1_1_packets_data_binary_ab2ebb88a52202cda0dcdb683e4c988ba}\label{class_babel_1_1_common_1_1_packets_data_binary_ab2ebb88a52202cda0dcdb683e4c988ba}} 
+\index{Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}!setArguments@{setArguments}}
+\index{setArguments@{setArguments}!Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}}
+\doxysubsubsection{\texorpdfstring{setArguments()}{setArguments()}}
+{\footnotesize\ttfamily void Babel\+::\+Common\+::\+Packets\+Data\+Binary\+::set\+Arguments (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{Argumentsto\+Set }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & std\+::vector$<$std\+::string$>$ \& \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_common_1_1_packets_data_binary_ac20bea616a4e06ea17e51c38e6ad5e3c}\label{class_babel_1_1_common_1_1_packets_data_binary_ac20bea616a4e06ea17e51c38e6ad5e3c}} 
+\index{Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}!setBytesSize@{setBytesSize}}
+\index{setBytesSize@{setBytesSize}!Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}}
+\doxysubsubsection{\texorpdfstring{setBytesSize()}{setBytesSize()}}
+{\footnotesize\ttfamily void Babel\+::\+Common\+::\+Packets\+Data\+Binary\+::set\+Bytes\+Size (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the data size in bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size\+\_\+t} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_common_1_1_packets_data_binary_aaada37c7bc03ce784b1d408467a7358d}\label{class_babel_1_1_common_1_1_packets_data_binary_aaada37c7bc03ce784b1d408467a7358d}} 
+\index{Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}!setCommandType@{setCommandType}}
+\index{setCommandType@{setCommandType}!Babel::Common::PacketsDataBinary@{Babel::Common::PacketsDataBinary}}
+\doxysubsubsection{\texorpdfstring{setCommandType()}{setCommandType()}}
+{\footnotesize\ttfamily void Babel\+::\+Common\+::\+Packets\+Data\+Binary\+::set\+Command\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_babel_1_1_rfc_ae847b6663accce552abbf548ed89f089}{Babel\+::\+Rfc\+::\+Code}}}]{Command\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets command code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{namespace_babel_1_1_rfc_ae847b6663accce552abbf548ed89f089}{Babel\+::\+Rfc\+::\+Code}}} & Command\+Type \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+Babel/Packets\+Data\+Binary.\+hpp\end{DoxyCompactItemize}

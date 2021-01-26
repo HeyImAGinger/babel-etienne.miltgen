@@ -1,0 +1,76 @@
+\hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_contact}{}\doxysection{Babel\+::Client\+::User\+Interface\+::Contact Class Reference}
+\label{class_babel_1_1_client_1_1_user_interface_1_1_contact}\index{Babel::Client::UserInterface::Contact@{Babel::Client::UserInterface::Contact}}
+
+
+Contains every informations of a contact like username, user\+Id, credentials, and the conversation between the client and him.  
+
+
+
+
+{\ttfamily \#include $<$Contact.\+hpp$>$}
+
+Inheritance diagram for Babel\+::Client\+::User\+Interface\+::Contact\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_babel_1_1_client_1_1_user_interface_1_1_contact}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_contact_a34d49f6d1942d8a3d44de1f7fe99b779}\label{class_babel_1_1_client_1_1_user_interface_1_1_contact_a34d49f6d1942d8a3d44de1f7fe99b779}} 
+void {\bfseries contact\+Clicked} (Q\+String id, Q\+String username)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_contact_a47e112c5858a04c736e19a69382fbdeb}\label{class_babel_1_1_client_1_1_user_interface_1_1_contact_a47e112c5858a04c736e19a69382fbdeb}} 
+{\bfseries Contact} (const Q\+String \&user\+ID, const std\+::string \&username, const \mbox{\hyperlink{namespace_babel_1_1_rfc_ab73e7f9d8b3c800197a023e134d85bcb}{Babel\+::\+Rfc\+::\+State}} state, Q\+Widget $\ast$parent=nullptr)
+\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_contact_aff8298e9b4704d1215b4fc834b403945}{change\+State}} (const \mbox{\hyperlink{namespace_babel_1_1_rfc_ab73e7f9d8b3c800197a023e134d85bcb}{Babel\+::\+Rfc\+::\+State}} new\+State)
+\begin{DoxyCompactList}\small\item\em Changes its state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_contact_a5f519b16669d553f9545d83f8309b2e3}\label{class_babel_1_1_client_1_1_user_interface_1_1_contact_a5f519b16669d553f9545d83f8309b2e3}} 
+\mbox{\hyperlink{class_babel_1_1_common_1_1_connection_credentials}{Babel\+::\+Common\+::\+Connection\+Credentials}} {\bfseries connection\+Credentials}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_contact_a0029c60b79ad3f12895373f36f97fc69}\label{class_babel_1_1_client_1_1_user_interface_1_1_contact_a0029c60b79ad3f12895373f36f97fc69}} 
+const Q\+String {\bfseries id}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_contact_a7498fc5e186149b12720793fe7ce3ac8}\label{class_babel_1_1_client_1_1_user_interface_1_1_contact_a7498fc5e186149b12720793fe7ce3ac8}} 
+Q\+String {\bfseries username}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_contact_a9e8fed24073913a702fde5f291c87506}\label{class_babel_1_1_client_1_1_user_interface_1_1_contact_a9e8fed24073913a702fde5f291c87506}} 
+\mbox{\hyperlink{namespace_babel_1_1_rfc_ab73e7f9d8b3c800197a023e134d85bcb}{Babel\+::\+Rfc\+::\+State}} {\bfseries state}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_contact_ac9954abbaa2a9c528fd8c4302679e734}\label{class_babel_1_1_client_1_1_user_interface_1_1_contact_ac9954abbaa2a9c528fd8c4302679e734}} 
+Q\+String {\bfseries conversation}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains every informations of a contact like username, user\+Id, credentials, and the conversation between the client and him. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_contact_aff8298e9b4704d1215b4fc834b403945}\label{class_babel_1_1_client_1_1_user_interface_1_1_contact_aff8298e9b4704d1215b4fc834b403945}} 
+\index{Babel::Client::UserInterface::Contact@{Babel::Client::UserInterface::Contact}!changeState@{changeState}}
+\index{changeState@{changeState}!Babel::Client::UserInterface::Contact@{Babel::Client::UserInterface::Contact}}
+\doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily void Contact\+::change\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_babel_1_1_rfc_ab73e7f9d8b3c800197a023e134d85bcb}{Babel\+::\+Rfc\+::\+State}}}]{new\+State }\end{DoxyParamCaption})}
+
+
+
+Changes its state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \mbox{\hyperlink{namespace_babel_1_1_rfc_ab73e7f9d8b3c800197a023e134d85bcb}{Babel\+::\+Rfc\+::\+State}} new\+State \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/\+U\+I/Contact.\+hpp\item 
+client/\+U\+I/Contact.\+cpp\end{DoxyCompactItemize}

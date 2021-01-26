@@ -1,0 +1,209 @@
+\hypertarget{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets}{}\doxysection{Babel\+::Server\+::Network\+::T\+C\+P\+Sockets Class Reference}
+\label{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets}\index{Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}}
+Inheritance diagram for Babel\+::Server\+::Network\+::T\+C\+P\+Sockets\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_ae86aedc14a8ab428e2be93af0b946454}{T\+C\+P\+Sockets}} (\mbox{\hyperlink{class_babel_1_1_common_1_1_connection_credentials}{Babel\+::\+Common\+::\+Connection\+Credentials}} Connection\+Credentials, boost\+::asio\+::io\+\_\+context \&io\+Context)
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets}{T\+C\+P\+Sockets}} Class \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_ae7e8850a014a45583180b7ecc7014197}{$\sim$\+T\+C\+P\+Sockets}} ()
+\begin{DoxyCompactList}\small\item\em destructor of \mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets}{T\+C\+P\+Sockets}} Class \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a9ae50a9decf5a46c30e16d342ca467c4}{connect}} ()
+\begin{DoxyCompactList}\small\item\em Connect the socket \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a8a2f6a6ed8f33c930fcae9b1af9a8716}{disconnect}} ()
+\begin{DoxyCompactList}\small\item\em disconet and close the socket \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_aee2d3f232c85df406495660983bae027}{send}} (\mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data}{Babel\+::\+Common\+::\+Packets\+Data}} packet)
+\begin{DoxyCompactList}\small\item\em write socket \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data}{Babel\+::\+Common\+::\+Packets\+Data}} \mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_ac65d6f2e82f257182e588bdfd6f734fe}{receive}} ()
+\begin{DoxyCompactList}\small\item\em Receive packet \end{DoxyCompactList}\item 
+boost\+::asio\+::ip\+::tcp\+::socket \& \mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_aa0ad7b13e1f073a7514d36817548f78e}{get\+Socket}} ()
+\begin{DoxyCompactList}\small\item\em Get the socket \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a6d8a4ff59ed5730c7ea55e9883aeaeb3}{is\+Socket\+Connected}} ()
+\begin{DoxyCompactList}\small\item\em Check if is connected and if socket is open \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a73f66bcfeae9d3686f20db1267077d31}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em get id of socket \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a68f6716fc744fc5ff5dd8706bb53edc6}{set\+ID}} (int32\+\_\+t \+\_\+id)
+\begin{DoxyCompactList}\small\item\em changed id of socket with new one \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a69e4062998e80fc802c1ab6b3f39d452}\label{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a69e4062998e80fc802c1ab6b3f39d452}} 
+const \mbox{\hyperlink{class_babel_1_1_common_1_1_connection_credentials}{Babel\+::\+Common\+::\+Connection\+Credentials}} {\bfseries get\+Connection\+Credentials} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets}{T\+C\+P\+Sockets}} $>$ \mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_ab42ca2fc7f2e14bb422b3274e299fa58}{create}} (\mbox{\hyperlink{class_babel_1_1_common_1_1_connection_credentials}{Babel\+::\+Common\+::\+Connection\+Credentials}} connection\+Info, boost\+::asio\+::io\+\_\+context \&io\+Context)
+\begin{DoxyCompactList}\small\item\em create a T\+CP socket with params received \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_ae86aedc14a8ab428e2be93af0b946454}\label{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_ae86aedc14a8ab428e2be93af0b946454}} 
+\index{Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}!TCPSockets@{TCPSockets}}
+\index{TCPSockets@{TCPSockets}!Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}}
+\doxysubsubsection{\texorpdfstring{TCPSockets()}{TCPSockets()}}
+{\footnotesize\ttfamily Babel\+::\+Server\+::\+Network\+::\+T\+C\+P\+Sockets\+::\+T\+C\+P\+Sockets (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_babel_1_1_common_1_1_connection_credentials}{Babel\+::\+Common\+::\+Connection\+Credentials}}}]{Connection\+Credentials,  }\item[{boost\+::asio\+::io\+\_\+context \&}]{io\+Context }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets}{T\+C\+P\+Sockets}} Class 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Connection\+Credentials} & Object with connection options (IP + Port)\\
+\hline
+{\em io\+Context} & I\+O\+Contect\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_ae7e8850a014a45583180b7ecc7014197}\label{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_ae7e8850a014a45583180b7ecc7014197}} 
+\index{Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}!````~TCPSockets@{$\sim$TCPSockets}}
+\index{````~TCPSockets@{$\sim$TCPSockets}!Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}}
+\doxysubsubsection{\texorpdfstring{$\sim$TCPSockets()}{~TCPSockets()}}
+{\footnotesize\ttfamily Babel\+::\+Server\+::\+Network\+::\+T\+C\+P\+Sockets\+::$\sim$\+T\+C\+P\+Sockets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destructor of \mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets}{T\+C\+P\+Sockets}} Class 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a9ae50a9decf5a46c30e16d342ca467c4}\label{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a9ae50a9decf5a46c30e16d342ca467c4}} 
+\index{Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}!connect@{connect}}
+\index{connect@{connect}!Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily bool Babel\+::\+Server\+::\+Network\+::\+T\+C\+P\+Sockets\+::connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Connect the socket 
+
+\begin{DoxyReturn}{Returns}
+If the Connection is done return True if not it\textquotesingle{}s false
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_ab42ca2fc7f2e14bb422b3274e299fa58}\label{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_ab42ca2fc7f2e14bb422b3274e299fa58}} 
+\index{Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}!create@{create}}
+\index{create@{create}!Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets}{Babel\+::\+Server\+::\+Network\+::\+T\+C\+P\+Sockets}} $>$ Babel\+::\+Server\+::\+Network\+::\+T\+C\+P\+Sockets\+::create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_babel_1_1_common_1_1_connection_credentials}{Babel\+::\+Common\+::\+Connection\+Credentials}}}]{Connection\+Credentials,  }\item[{boost\+::asio\+::io\+\_\+context \&}]{io\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+create a T\+CP socket with params received 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Connection\+Credentials} & Connection infos (Ip and Port)\\
+\hline
+{\em io\+Context} & io context from boost\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new \mbox{\hyperlink{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets}{T\+C\+P\+Sockets}} object
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a8a2f6a6ed8f33c930fcae9b1af9a8716}\label{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a8a2f6a6ed8f33c930fcae9b1af9a8716}} 
+\index{Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily bool Babel\+::\+Server\+::\+Network\+::\+T\+C\+P\+Sockets\+::disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+disconet and close the socket 
+
+\begin{DoxyReturn}{Returns}
+true if disconnection complete else false
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a73f66bcfeae9d3686f20db1267077d31}\label{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a73f66bcfeae9d3686f20db1267077d31}} 
+\index{Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}!getID@{getID}}
+\index{getID@{getID}!Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily int32\+\_\+t Babel\+::\+Server\+::\+Network\+::\+T\+C\+P\+Sockets\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get id of socket 
+
+\begin{DoxyReturn}{Returns}
+return socket id
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_aa0ad7b13e1f073a7514d36817548f78e}\label{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_aa0ad7b13e1f073a7514d36817548f78e}} 
+\index{Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}!getSocket@{getSocket}}
+\index{getSocket@{getSocket}!Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}}
+\doxysubsubsection{\texorpdfstring{getSocket()}{getSocket()}}
+{\footnotesize\ttfamily boost\+::asio\+::ip\+::tcp\+::socket \& Babel\+::\+Server\+::\+Network\+::\+T\+C\+P\+Sockets\+::get\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the socket 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a6d8a4ff59ed5730c7ea55e9883aeaeb3}\label{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a6d8a4ff59ed5730c7ea55e9883aeaeb3}} 
+\index{Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}!isSocketConnected@{isSocketConnected}}
+\index{isSocketConnected@{isSocketConnected}!Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}}
+\doxysubsubsection{\texorpdfstring{isSocketConnected()}{isSocketConnected()}}
+{\footnotesize\ttfamily bool Babel\+::\+Server\+::\+Network\+::\+T\+C\+P\+Sockets\+::is\+Socket\+Connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if is connected and if socket is open 
+
+\begin{DoxyReturn}{Returns}
+Return true if socket is open and open connection if connection is off return false if socket is closed
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_ac65d6f2e82f257182e588bdfd6f734fe}\label{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_ac65d6f2e82f257182e588bdfd6f734fe}} 
+\index{Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}!receive@{receive}}
+\index{receive@{receive}!Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data}{Babel\+::\+Common\+::\+Packets\+Data}} Babel\+::\+Server\+::\+Network\+::\+T\+C\+P\+Sockets\+::receive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Receive packet 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_aee2d3f232c85df406495660983bae027}\label{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_aee2d3f232c85df406495660983bae027}} 
+\index{Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}!send@{send}}
+\index{send@{send}!Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily bool Babel\+::\+Server\+::\+Network\+::\+T\+C\+P\+Sockets\+::send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data}{Babel\+::\+Common\+::\+Packets\+Data}}}]{packet }\end{DoxyParamCaption})}
+
+
+
+write socket 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a68f6716fc744fc5ff5dd8706bb53edc6}\label{class_babel_1_1_server_1_1_network_1_1_t_c_p_sockets_a68f6716fc744fc5ff5dd8706bb53edc6}} 
+\index{Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}!setID@{setID}}
+\index{setID@{setID}!Babel::Server::Network::TCPSockets@{Babel::Server::Network::TCPSockets}}
+\doxysubsubsection{\texorpdfstring{setID()}{setID()}}
+{\footnotesize\ttfamily void Babel\+::\+Server\+::\+Network\+::\+T\+C\+P\+Sockets\+::set\+ID (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{id }\end{DoxyParamCaption})}
+
+
+
+changed id of socket with new one 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & new id to set\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+server/\+O\+L\+D/T\+C\+P\+Sockets\+\_\+old.\+hpp\item 
+server/\+O\+L\+D/T\+C\+P\+Sockets\+\_\+old.\+cpp\end{DoxyCompactItemize}

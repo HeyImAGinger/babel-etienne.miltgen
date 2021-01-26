@@ -1,0 +1,91 @@
+\hypertarget{class_babel_1_1_client_1_1_compressor}{}\doxysection{Babel\+::Client\+::Compressor Class Reference}
+\label{class_babel_1_1_client_1_1_compressor}\index{Babel::Client::Compressor@{Babel::Client::Compressor}}
+
+
+Encapsulation of O\+P\+US for audio encoding/decoding.  
+
+
+
+
+{\ttfamily \#include $<$Compressor.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_compressor_ab9915bd57cd46d63952028f8bc84f1f3}\label{class_babel_1_1_client_1_1_compressor_ab9915bd57cd46d63952028f8bc84f1f3}} 
+{\bfseries Compressor} (uint32\+\_\+t sample\+Rate, uint32\+\_\+t channel)
+\item 
+std\+::vector$<$ S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+PE $>$ \mbox{\hyperlink{class_babel_1_1_client_1_1_compressor_a8efdd1079dabf132bd98134cd2db6186}{encode}} (std\+::vector$<$ S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+PE $>$ sample)
+\begin{DoxyCompactList}\small\item\em Encode given audio sample. \end{DoxyCompactList}\item 
+std\+::vector$<$ S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+PE $>$ \mbox{\hyperlink{class_babel_1_1_client_1_1_compressor_a5259d8663e54b8bd6b907a1ce67d4536}{decode}} (std\+::vector$<$ S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+PE $>$ encoded)
+\begin{DoxyCompactList}\small\item\em Decode given audio sample. \end{DoxyCompactList}\item 
+std\+::vector$<$ S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+PE $>$ \mbox{\hyperlink{class_babel_1_1_client_1_1_compressor_a1d681a89a0ce8c7b86be5812637ce92f}{decode}} (S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+PE $\ast$encoded, unsigned int size)
+\begin{DoxyCompactList}\small\item\em Decode from a C array audio sample. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Encapsulation of O\+P\+US for audio encoding/decoding. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_compressor_a1d681a89a0ce8c7b86be5812637ce92f}\label{class_babel_1_1_client_1_1_compressor_a1d681a89a0ce8c7b86be5812637ce92f}} 
+\index{Babel::Client::Compressor@{Babel::Client::Compressor}!decode@{decode}}
+\index{decode@{decode}!Babel::Client::Compressor@{Babel::Client::Compressor}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+PE $>$ Babel\+::\+Client\+::\+Compressor\+::decode (\begin{DoxyParamCaption}\item[{S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+PE $\ast$}]{encoded,  }\item[{unsigned int}]{size }\end{DoxyParamCaption})}
+
+
+
+Decode from a C array audio sample. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+P\+E$\ast$} & encoded audio \\
+\hline
+{\em unsigned} & int size of the audio sample \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+P\+E$>$ decoded audio 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_compressor_a5259d8663e54b8bd6b907a1ce67d4536}\label{class_babel_1_1_client_1_1_compressor_a5259d8663e54b8bd6b907a1ce67d4536}} 
+\index{Babel::Client::Compressor@{Babel::Client::Compressor}!decode@{decode}}
+\index{decode@{decode}!Babel::Client::Compressor@{Babel::Client::Compressor}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+PE $>$ Babel\+::\+Client\+::\+Compressor\+::decode (\begin{DoxyParamCaption}\item[{std\+::vector$<$ S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+PE $>$}]{encoded }\end{DoxyParamCaption})}
+
+
+
+Decode given audio sample. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$\+S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+P\+E$>$} & encoded audio \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+P\+E$>$ decoded audio 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_compressor_a8efdd1079dabf132bd98134cd2db6186}\label{class_babel_1_1_client_1_1_compressor_a8efdd1079dabf132bd98134cd2db6186}} 
+\index{Babel::Client::Compressor@{Babel::Client::Compressor}!encode@{encode}}
+\index{encode@{encode}!Babel::Client::Compressor@{Babel::Client::Compressor}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily std\+::vector$<$ S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+PE $>$ Babel\+::\+Client\+::\+Compressor\+::encode (\begin{DoxyParamCaption}\item[{std\+::vector$<$ S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+PE $>$}]{sample }\end{DoxyParamCaption})}
+
+
+
+Encode given audio sample. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$\+S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+P\+E$>$} & sample \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+P\+E$>$ encoded audio 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/Compressor.\+hpp\item 
+client/Compressor.\+cpp\end{DoxyCompactItemize}

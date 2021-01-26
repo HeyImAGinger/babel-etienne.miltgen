@@ -1,0 +1,112 @@
+\hypertarget{class_babel_1_1_client_1_1_audio_stream}{}\doxysection{Babel\+::Client\+::Audio\+Stream Class Reference}
+\label{class_babel_1_1_client_1_1_audio_stream}\index{Babel::Client::AudioStream@{Babel::Client::AudioStream}}
+
+
+Port-\/\+Audio encapsulation used to create and manage audio stream.  
+
+
+
+
+{\ttfamily \#include $<$Audio\+Stream.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_babel_1_1_client_1_1_audio_stream_a1423e9cd6e5c79c6a4a665955f3077c0}{create\+Stream}} (double sample\+Rate, unsigned long frames\+Per\+Buffer, Pa\+Stream\+Callback $\ast$callback, void $\ast$data)
+\begin{DoxyCompactList}\small\item\em Open Port\+Audio stream with default parameters. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_client_1_1_audio_stream_a5e9afafd5cc531411ca6899f9b351ca4}{start\+Stream}} ()
+\begin{DoxyCompactList}\small\item\em Start the stream (Call\+Back function will start being called) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_client_1_1_audio_stream_a5a411a1051686320ec7757d694b343ff}{stop\+Stream}} ()
+\begin{DoxyCompactList}\small\item\em Stop the stream (Call\+Back function will stop being called) \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_babel_1_1_client_1_1_audio_stream_a0b22f066653266a5e93dbfeb1ee12236}{get\+Input\+Device\+Name}} () const
+\begin{DoxyCompactList}\small\item\em A method that returns the default input device name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_babel_1_1_client_1_1_audio_stream_a7a9d7da3304d71bd8e221b93602e365e}{get\+Output\+Device\+Name}} () const
+\begin{DoxyCompactList}\small\item\em A method that returns the default output device name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Port-\/\+Audio encapsulation used to create and manage audio stream. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_audio_stream_a1423e9cd6e5c79c6a4a665955f3077c0}\label{class_babel_1_1_client_1_1_audio_stream_a1423e9cd6e5c79c6a4a665955f3077c0}} 
+\index{Babel::Client::AudioStream@{Babel::Client::AudioStream}!createStream@{createStream}}
+\index{createStream@{createStream}!Babel::Client::AudioStream@{Babel::Client::AudioStream}}
+\doxysubsubsection{\texorpdfstring{createStream()}{createStream()}}
+{\footnotesize\ttfamily bool Babel\+::\+Client\+::\+Audio\+Stream\+::create\+Stream (\begin{DoxyParamCaption}\item[{double}]{sample\+Rate,  }\item[{unsigned long}]{frames\+Per\+Buffer,  }\item[{Pa\+Stream\+Callback $\ast$}]{callback,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Open Port\+Audio stream with default parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Sample} & rate \\
+\hline
+{\em Frames} & per buffer \\
+\hline
+{\em Port\+Audio} & call\+Back function \\
+\hline
+{\em Data} & passed to the Call\+Back function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean saying if everything went okay 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_audio_stream_a0b22f066653266a5e93dbfeb1ee12236}\label{class_babel_1_1_client_1_1_audio_stream_a0b22f066653266a5e93dbfeb1ee12236}} 
+\index{Babel::Client::AudioStream@{Babel::Client::AudioStream}!getInputDeviceName@{getInputDeviceName}}
+\index{getInputDeviceName@{getInputDeviceName}!Babel::Client::AudioStream@{Babel::Client::AudioStream}}
+\doxysubsubsection{\texorpdfstring{getInputDeviceName()}{getInputDeviceName()}}
+{\footnotesize\ttfamily std\+::string Babel\+::\+Client\+::\+Audio\+Stream\+::get\+Input\+Device\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+A method that returns the default input device name. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the audio device name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_audio_stream_a7a9d7da3304d71bd8e221b93602e365e}\label{class_babel_1_1_client_1_1_audio_stream_a7a9d7da3304d71bd8e221b93602e365e}} 
+\index{Babel::Client::AudioStream@{Babel::Client::AudioStream}!getOutputDeviceName@{getOutputDeviceName}}
+\index{getOutputDeviceName@{getOutputDeviceName}!Babel::Client::AudioStream@{Babel::Client::AudioStream}}
+\doxysubsubsection{\texorpdfstring{getOutputDeviceName()}{getOutputDeviceName()}}
+{\footnotesize\ttfamily std\+::string Babel\+::\+Client\+::\+Audio\+Stream\+::get\+Output\+Device\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+A method that returns the default output device name. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the audio device name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_audio_stream_a5e9afafd5cc531411ca6899f9b351ca4}\label{class_babel_1_1_client_1_1_audio_stream_a5e9afafd5cc531411ca6899f9b351ca4}} 
+\index{Babel::Client::AudioStream@{Babel::Client::AudioStream}!startStream@{startStream}}
+\index{startStream@{startStream}!Babel::Client::AudioStream@{Babel::Client::AudioStream}}
+\doxysubsubsection{\texorpdfstring{startStream()}{startStream()}}
+{\footnotesize\ttfamily bool Babel\+::\+Client\+::\+Audio\+Stream\+::start\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Start the stream (Call\+Back function will start being called) 
+
+\begin{DoxyReturn}{Returns}
+A boolean saying if everything went okay 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_audio_stream_a5a411a1051686320ec7757d694b343ff}\label{class_babel_1_1_client_1_1_audio_stream_a5a411a1051686320ec7757d694b343ff}} 
+\index{Babel::Client::AudioStream@{Babel::Client::AudioStream}!stopStream@{stopStream}}
+\index{stopStream@{stopStream}!Babel::Client::AudioStream@{Babel::Client::AudioStream}}
+\doxysubsubsection{\texorpdfstring{stopStream()}{stopStream()}}
+{\footnotesize\ttfamily bool Babel\+::\+Client\+::\+Audio\+Stream\+::stop\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stop the stream (Call\+Back function will stop being called) 
+
+\begin{DoxyReturn}{Returns}
+A boolean saying if everything went okay 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/Audio\+Stream.\+hpp\item 
+client/Audio\+Stream.\+cpp\end{DoxyCompactItemize}

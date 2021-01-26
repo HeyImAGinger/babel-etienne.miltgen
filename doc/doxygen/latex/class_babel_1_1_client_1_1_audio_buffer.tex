@@ -1,0 +1,63 @@
+\hypertarget{class_babel_1_1_client_1_1_audio_buffer}{}\doxysection{Babel\+::Client\+::Audio\+Buffer Class Reference}
+\label{class_babel_1_1_client_1_1_audio_buffer}\index{Babel::Client::AudioBuffer@{Babel::Client::AudioBuffer}}
+
+
+Manage an audio buffer.  
+
+
+
+
+{\ttfamily \#include $<$Audio\+Buffer.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_audio_buffer_a145724dbf270e0eb6ee346a57b78d9de}{write\+Buffer}} (const S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+PE $\ast$data, unsigned int data\+Size)
+\begin{DoxyCompactList}\small\item\em Write audio in the buffer. \end{DoxyCompactList}\item 
+std\+::vector$<$ S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+PE $>$ \mbox{\hyperlink{class_babel_1_1_client_1_1_audio_buffer_a4d34e8f39990027116aa3fae8ff7e337}{read\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Read audio from the buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_audio_buffer_aefc5d636d5d20cdeda6e25a01056c706}\label{class_babel_1_1_client_1_1_audio_buffer_aefc5d636d5d20cdeda6e25a01056c706}} 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_audio_buffer_aefc5d636d5d20cdeda6e25a01056c706}{clear\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Clear the buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manage an audio buffer. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_audio_buffer_a4d34e8f39990027116aa3fae8ff7e337}\label{class_babel_1_1_client_1_1_audio_buffer_a4d34e8f39990027116aa3fae8ff7e337}} 
+\index{Babel::Client::AudioBuffer@{Babel::Client::AudioBuffer}!readBuffer@{readBuffer}}
+\index{readBuffer@{readBuffer}!Babel::Client::AudioBuffer@{Babel::Client::AudioBuffer}}
+\doxysubsubsection{\texorpdfstring{readBuffer()}{readBuffer()}}
+{\footnotesize\ttfamily std\+::vector$<$ S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+PE $>$ Babel\+::\+Client\+::\+Audio\+Buffer\+::read\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read audio from the buffer. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+P\+E$>$ audio sample 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_audio_buffer_a145724dbf270e0eb6ee346a57b78d9de}\label{class_babel_1_1_client_1_1_audio_buffer_a145724dbf270e0eb6ee346a57b78d9de}} 
+\index{Babel::Client::AudioBuffer@{Babel::Client::AudioBuffer}!writeBuffer@{writeBuffer}}
+\index{writeBuffer@{writeBuffer}!Babel::Client::AudioBuffer@{Babel::Client::AudioBuffer}}
+\doxysubsubsection{\texorpdfstring{writeBuffer()}{writeBuffer()}}
+{\footnotesize\ttfamily void Babel\+::\+Client\+::\+Audio\+Buffer\+::write\+Buffer (\begin{DoxyParamCaption}\item[{const S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+PE $\ast$}]{data,  }\item[{unsigned int}]{data\+Size }\end{DoxyParamCaption})}
+
+
+
+Write audio in the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & S\+A\+M\+P\+L\+E\+\_\+\+T\+Y\+P\+E$\ast$ data \\
+\hline
+{\em unsigned} & int data\+Size \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/Audio\+Buffer.\+hpp\item 
+client/Audio\+Buffer.\+cpp\end{DoxyCompactItemize}

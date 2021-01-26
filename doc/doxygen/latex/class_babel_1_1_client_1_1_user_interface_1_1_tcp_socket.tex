@@ -1,0 +1,219 @@
+\hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket}{}\doxysection{Babel\+::Client\+::User\+Interface\+::Tcp\+Socket Class Reference}
+\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket}\index{Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}}
+
+
+Reads and writes every data between itself and a server socket.  
+
+
+
+
+{\ttfamily \#include $<$Tcp\+Socket.\+hpp$>$}
+
+Inheritance diagram for Babel\+::Client\+::User\+Interface\+::Tcp\+Socket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a098ffb2015949046d99106466f0546d3}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a098ffb2015949046d99106466f0546d3}} 
+void {\bfseries begin\+Connect} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a5db0a84a298029aa81063c88c14efa85}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a5db0a84a298029aa81063c88c14efa85}} 
+void {\bfseries data\+Received} ()
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a8ddd79cb6349f84027bac5fe614d2ce8}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a8ddd79cb6349f84027bac5fe614d2ce8}} 
+void {\bfseries signal\+Begin\+Connect} ()
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_af7e29832a76633003ab97ddee643ebd1}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_af7e29832a76633003ab97ddee643ebd1}} 
+void {\bfseries lost\+Connection\+With\+Server} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a83dfb42946c826eec6ec66d2f0b6dacf}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a83dfb42946c826eec6ec66d2f0b6dacf}} 
+{\bfseries Tcp\+Socket} (const Q\+String \&ip\+Adress, const quint16 port)
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_ac633b3c5c947d711e8fe9169142dc663}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_ac633b3c5c947d711e8fe9169142dc663}} 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_ac633b3c5c947d711e8fe9169142dc663}{send\+Request\+\_\+\+Unknown}} ()
+\begin{DoxyCompactList}\small\item\em Sends an Unknown request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a749128b5e08df73ec78c892ded2ec2f8}{send\+Request\+\_\+\+Ok}} (const \mbox{\hyperlink{namespace_babel_1_1_rfc_ae847b6663accce552abbf548ed89f089}{Babel\+::\+Rfc\+::\+Code}} command\+Id)
+\begin{DoxyCompactList}\small\item\em Sends an OK request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_aef9b6de98316987156682411895bc40d}{send\+Request\+\_\+\+Error}} (const \mbox{\hyperlink{namespace_babel_1_1_rfc_ae847b6663accce552abbf548ed89f089}{Babel\+::\+Rfc\+::\+Code}} command\+Id, const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Sends an Error request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_ada28b4eaf89ae25f9c8f28695de330d6}{send\+Request\+\_\+\+Login}} (const std\+::string \&username, const std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Sends a Login request. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_abad2f28acc067ba49e88ff7decff2c72}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_abad2f28acc067ba49e88ff7decff2c72}} 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_abad2f28acc067ba49e88ff7decff2c72}{send\+Request\+\_\+\+Logout}} ()
+\begin{DoxyCompactList}\small\item\em Sends a Logout request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a08f2c4e8ba4dd454bfff5ee50906ac68}{send\+Request\+\_\+\+Call}} (const std\+::string \&user\+Id, const std\+::string \&ip, const uint16\+\_\+t port)
+\begin{DoxyCompactList}\small\item\em Sends a Call request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_ae5a1b747b69745561dd58f93d296aa9c}{send\+Request\+\_\+\+Call\+Answer}} (const std\+::string \&user\+Id, const std\+::string \&ip, const uint16\+\_\+t port)
+\begin{DoxyCompactList}\small\item\em Sends a Call\+\_\+\+Answer request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a4a16709571c8a54e9ac2f7c8648e012a}{send\+Request\+\_\+\+Call\+End}} (const std\+::string \&user\+Id)
+\begin{DoxyCompactList}\small\item\em Sends a Call\+\_\+\+End request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a60d5b2faf31e02d0cf41ff142cc2fd4c}{send\+Request\+\_\+\+Contact}} (const std\+::string \&username)
+\begin{DoxyCompactList}\small\item\em Sends a \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_contact}{Contact}} request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a2f46692432538812de13b64436da34f5}{send\+Request\+\_\+\+Msg}} (const std\+::string \&user\+Id, const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Sends a Msg request. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_ad68af334c29a44fe0729d704ba2751d4}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_ad68af334c29a44fe0729d704ba2751d4}} 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_ad68af334c29a44fe0729d704ba2751d4}{send\+Request\+\_\+\+Ping}} ()
+\begin{DoxyCompactList}\small\item\em Sends a Ping request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a1dc5428f6b39c8413c633544100e87e6}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a1dc5428f6b39c8413c633544100e87e6}} 
+Q\+List$<$ \mbox{\hyperlink{class_babel_1_1_common_1_1_packets_data_binary}{Babel\+::\+Common\+::\+Packets\+Data\+Binary}} $>$ {\bfseries requests}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Reads and writes every data between itself and a server socket. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a08f2c4e8ba4dd454bfff5ee50906ac68}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a08f2c4e8ba4dd454bfff5ee50906ac68}} 
+\index{Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}!sendRequest\_Call@{sendRequest\_Call}}
+\index{sendRequest\_Call@{sendRequest\_Call}!Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}}
+\doxysubsubsection{\texorpdfstring{sendRequest\_Call()}{sendRequest\_Call()}}
+{\footnotesize\ttfamily void Tcp\+Socket\+::send\+Request\+\_\+\+Call (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+Id,  }\item[{const std\+::string \&}]{ip,  }\item[{const uint16\+\_\+t}]{port }\end{DoxyParamCaption})}
+
+
+
+Sends a Call request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & std\+::string \& user\+Id \\
+\hline
+{\em const} & std\+::string \& ip \\
+\hline
+{\em const} & uint16\+\_\+t port \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_ae5a1b747b69745561dd58f93d296aa9c}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_ae5a1b747b69745561dd58f93d296aa9c}} 
+\index{Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}!sendRequest\_CallAnswer@{sendRequest\_CallAnswer}}
+\index{sendRequest\_CallAnswer@{sendRequest\_CallAnswer}!Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}}
+\doxysubsubsection{\texorpdfstring{sendRequest\_CallAnswer()}{sendRequest\_CallAnswer()}}
+{\footnotesize\ttfamily void Tcp\+Socket\+::send\+Request\+\_\+\+Call\+Answer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+Id,  }\item[{const std\+::string \&}]{ip,  }\item[{const uint16\+\_\+t}]{port }\end{DoxyParamCaption})}
+
+
+
+Sends a Call\+\_\+\+Answer request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & Q\+String \& user\+Id \\
+\hline
+{\em const} & Q\+String \& ip \\
+\hline
+{\em const} & uint16\+\_\+t port \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a4a16709571c8a54e9ac2f7c8648e012a}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a4a16709571c8a54e9ac2f7c8648e012a}} 
+\index{Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}!sendRequest\_CallEnd@{sendRequest\_CallEnd}}
+\index{sendRequest\_CallEnd@{sendRequest\_CallEnd}!Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}}
+\doxysubsubsection{\texorpdfstring{sendRequest\_CallEnd()}{sendRequest\_CallEnd()}}
+{\footnotesize\ttfamily void Tcp\+Socket\+::send\+Request\+\_\+\+Call\+End (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+Sends a Call\+\_\+\+End request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & Q\+String \& user\+Id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a60d5b2faf31e02d0cf41ff142cc2fd4c}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a60d5b2faf31e02d0cf41ff142cc2fd4c}} 
+\index{Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}!sendRequest\_Contact@{sendRequest\_Contact}}
+\index{sendRequest\_Contact@{sendRequest\_Contact}!Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}}
+\doxysubsubsection{\texorpdfstring{sendRequest\_Contact()}{sendRequest\_Contact()}}
+{\footnotesize\ttfamily void Tcp\+Socket\+::send\+Request\+\_\+\+Contact (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username }\end{DoxyParamCaption})}
+
+
+
+Sends a \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_contact}{Contact}} request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & Q\+String \& username \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_aef9b6de98316987156682411895bc40d}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_aef9b6de98316987156682411895bc40d}} 
+\index{Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}!sendRequest\_Error@{sendRequest\_Error}}
+\index{sendRequest\_Error@{sendRequest\_Error}!Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}}
+\doxysubsubsection{\texorpdfstring{sendRequest\_Error()}{sendRequest\_Error()}}
+{\footnotesize\ttfamily void Tcp\+Socket\+::send\+Request\+\_\+\+Error (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_babel_1_1_rfc_ae847b6663accce552abbf548ed89f089}{Babel\+::\+Rfc\+::\+Code}}}]{command\+Id,  }\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})}
+
+
+
+Sends an Error request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & std\+::string \& command\+Id \\
+\hline
+{\em const} & std\+::string \& message \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_ada28b4eaf89ae25f9c8f28695de330d6}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_ada28b4eaf89ae25f9c8f28695de330d6}} 
+\index{Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}!sendRequest\_Login@{sendRequest\_Login}}
+\index{sendRequest\_Login@{sendRequest\_Login}!Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}}
+\doxysubsubsection{\texorpdfstring{sendRequest\_Login()}{sendRequest\_Login()}}
+{\footnotesize\ttfamily void Tcp\+Socket\+::send\+Request\+\_\+\+Login (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username,  }\item[{const std\+::string \&}]{password }\end{DoxyParamCaption})}
+
+
+
+Sends a Login request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & std\+::string \& username \\
+\hline
+{\em const} & std\+::string \& password \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a2f46692432538812de13b64436da34f5}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a2f46692432538812de13b64436da34f5}} 
+\index{Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}!sendRequest\_Msg@{sendRequest\_Msg}}
+\index{sendRequest\_Msg@{sendRequest\_Msg}!Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}}
+\doxysubsubsection{\texorpdfstring{sendRequest\_Msg()}{sendRequest\_Msg()}}
+{\footnotesize\ttfamily void Tcp\+Socket\+::send\+Request\+\_\+\+Msg (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+Id,  }\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})}
+
+
+
+Sends a Msg request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & Q\+String \& user\+Id \\
+\hline
+{\em const} & Q\+String \& message \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a749128b5e08df73ec78c892ded2ec2f8}\label{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket_a749128b5e08df73ec78c892ded2ec2f8}} 
+\index{Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}!sendRequest\_Ok@{sendRequest\_Ok}}
+\index{sendRequest\_Ok@{sendRequest\_Ok}!Babel::Client::UserInterface::TcpSocket@{Babel::Client::UserInterface::TcpSocket}}
+\doxysubsubsection{\texorpdfstring{sendRequest\_Ok()}{sendRequest\_Ok()}}
+{\footnotesize\ttfamily void Tcp\+Socket\+::send\+Request\+\_\+\+Ok (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_babel_1_1_rfc_ae847b6663accce552abbf548ed89f089}{Babel\+::\+Rfc\+::\+Code}}}]{command\+Id }\end{DoxyParamCaption})}
+
+
+
+Sends an OK request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \mbox{\hyperlink{namespace_babel_1_1_rfc_ae847b6663accce552abbf548ed89f089}{Babel\+::\+Rfc\+::\+Code}} command\+Id \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/\+U\+I/Tcp\+Socket.\+hpp\item 
+client/\+U\+I/Tcp\+Socket.\+cpp\end{DoxyCompactItemize}

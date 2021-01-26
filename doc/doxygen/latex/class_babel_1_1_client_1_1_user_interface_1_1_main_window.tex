@@ -1,0 +1,216 @@
+\hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_main_window}{}\doxysection{Babel\+::Client\+::User\+Interface\+::Main\+Window Class Reference}
+\label{class_babel_1_1_client_1_1_user_interface_1_1_main_window}\index{Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}}
+
+
+Contains the main window, where everything is regrouped and used.  
+
+
+
+
+{\ttfamily \#include $<$Main\+Window.\+hpp$>$}
+
+Inheritance diagram for Babel\+::Client\+::User\+Interface\+::Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_babel_1_1_client_1_1_user_interface_1_1_main_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a0843907da2091fe3d7fd1c5fe8af9fc8}\label{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a0843907da2091fe3d7fd1c5fe8af9fc8}} 
+{\bfseries Main\+Window} (\mbox{\hyperlink{class_babel_1_1_common_1_1_connection_credentials}{Common\+::\+Connection\+Credentials}} server\+Credentials, const std\+::string \&my\+IP, Q\+Widget $\ast$parent=nullptr)
+\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a6e15da4c53890d0bfc39007e569f8fa1}{refresh\+User}} (const std\+::string \&user\+ID, const std\+::string \&username, const \mbox{\hyperlink{namespace_babel_1_1_rfc_ab73e7f9d8b3c800197a023e134d85bcb}{Babel\+::\+Rfc\+::\+State}} state)
+\begin{DoxyCompactList}\small\item\em Does the same thing as add\+User. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_main_window_ace76b809ef0206d2674c39be530e3cb0}{add\+User}} (const std\+::string \&user\+ID, const std\+::string \&username, const \mbox{\hyperlink{namespace_babel_1_1_rfc_ab73e7f9d8b3c800197a023e134d85bcb}{Babel\+::\+Rfc\+::\+State}} state, const std\+::string \&conversation=\char`\"{}\char`\"{}, bool notification=false)
+\begin{DoxyCompactList}\small\item\em Adds a contact to the contact list, the 3 first parameters are mandatory, but conversation and notification are not. conversion represents the messages between the user and the contact. notification just pops up a Q\+Message\+Box if set to true. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a51644eeda376f4c8a75a3c736dbbec7e}{add\+User}} (const std\+::string \&user\+ID, const std\+::string \&username, const \mbox{\hyperlink{namespace_babel_1_1_rfc_ab73e7f9d8b3c800197a023e134d85bcb}{Babel\+::\+Rfc\+::\+State}} state, const std\+::string \&ip, const uint16\+\_\+t port, const std\+::string \&conversation=\char`\"{}\char`\"{}, bool notification=false)
+\begin{DoxyCompactList}\small\item\em Just add\+User but with ip and port if needed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_main_window_ab32645609f5abc3c2753fdd1a56b3a1b}{remove\+User}} (const std\+::string \&user\+ID, bool notification=false)
+\begin{DoxyCompactList}\small\item\em Removes the contact having user\+ID as its id from the contact list of the user. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a7485aa8dca4531f734c9b910946b4b2b}\label{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a7485aa8dca4531f734c9b910946b4b2b}} 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a7485aa8dca4531f734c9b910946b4b2b}{clear\+Contact\+List}} ()
+\begin{DoxyCompactList}\small\item\em Clears the contact list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a2d91f00ff63537fca8aaeb9e85ebc990}{call\+From\+User}} (const std\+::string \&user\+ID, const std\+::string \&ip\+Adress, const uint16\+\_\+t port)
+\begin{DoxyCompactList}\small\item\em This function has to be called when an incoming call from a contact is being received. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a933d7c140164fe4838eb82f802fe48a0}{call\+Started}} (const std\+::string \&user\+ID, const std\+::string \&ip\+Adress, const uint16\+\_\+t port)
+\begin{DoxyCompactList}\small\item\em This function has to be called when a call with a contact just started. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_main_window_aecc9505587b6619e0a926ff4c5b25cb1}{call\+Ended}} (const std\+::string \&user\+ID)
+\begin{DoxyCompactList}\small\item\em This function has to be called when a call with a contact has just finished. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_main_window_af62a7784639b517875954b3bf97b273f}{receive\+Message\+From\+User}} (const std\+::string \&user\+ID, const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em This function has to be called when a message from a user has been received. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a89f34118850b01ec3831983b01f0954b}\label{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a89f34118850b01ec3831983b01f0954b}} 
+Q\+List$<$ \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_contact}{Contact}} $\ast$ $>$ \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a89f34118850b01ec3831983b01f0954b}{contact\+List}}
+\begin{DoxyCompactList}\small\item\em contact\+List Q\+List$<$\+Contact $\ast$$>$, contains every contact, their username, password, ip, port, id, ... \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the main window, where everything is regrouped and used. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_main_window_ace76b809ef0206d2674c39be530e3cb0}\label{class_babel_1_1_client_1_1_user_interface_1_1_main_window_ace76b809ef0206d2674c39be530e3cb0}} 
+\index{Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}!addUser@{addUser}}
+\index{addUser@{addUser}!Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}}
+\doxysubsubsection{\texorpdfstring{addUser()}{addUser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Main\+Window\+::add\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+ID,  }\item[{const std\+::string \&}]{username,  }\item[{const \mbox{\hyperlink{namespace_babel_1_1_rfc_ab73e7f9d8b3c800197a023e134d85bcb}{Babel\+::\+Rfc\+::\+State}}}]{state,  }\item[{const std\+::string \&}]{conversation = {\ttfamily \char`\"{}\char`\"{}},  }\item[{bool}]{notification = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Adds a contact to the contact list, the 3 first parameters are mandatory, but conversation and notification are not. conversion represents the messages between the user and the contact. notification just pops up a Q\+Message\+Box if set to true. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & std\+::string \& user\+ID \\
+\hline
+{\em const} & std\+::string \& username \\
+\hline
+{\em const} & \mbox{\hyperlink{namespace_babel_1_1_rfc_ab73e7f9d8b3c800197a023e134d85bcb}{Babel\+::\+Rfc\+::\+State}} state \\
+\hline
+{\em const} & std\+::string \& conversation \\
+\hline
+{\em bool} & notification \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a51644eeda376f4c8a75a3c736dbbec7e}\label{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a51644eeda376f4c8a75a3c736dbbec7e}} 
+\index{Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}!addUser@{addUser}}
+\index{addUser@{addUser}!Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}}
+\doxysubsubsection{\texorpdfstring{addUser()}{addUser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Main\+Window\+::add\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+ID,  }\item[{const std\+::string \&}]{username,  }\item[{const \mbox{\hyperlink{namespace_babel_1_1_rfc_ab73e7f9d8b3c800197a023e134d85bcb}{Babel\+::\+Rfc\+::\+State}}}]{state,  }\item[{const std\+::string \&}]{ip,  }\item[{const uint16\+\_\+t}]{port,  }\item[{const std\+::string \&}]{conversation = {\ttfamily \char`\"{}\char`\"{}},  }\item[{bool}]{notification = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Just add\+User but with ip and port if needed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & std\+::string \& user\+ID \\
+\hline
+{\em const} & std\+::string \& username \\
+\hline
+{\em const} & \mbox{\hyperlink{namespace_babel_1_1_rfc_ab73e7f9d8b3c800197a023e134d85bcb}{Babel\+::\+Rfc\+::\+State}} state \\
+\hline
+{\em const} & std\+::string \& ip \\
+\hline
+{\em const} & uint16\+\_\+t port \\
+\hline
+{\em const} & std\+::string \& conversation \\
+\hline
+{\em bool} & notification (to show a popup or not of what\textquotesingle{}s happening) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_main_window_aecc9505587b6619e0a926ff4c5b25cb1}\label{class_babel_1_1_client_1_1_user_interface_1_1_main_window_aecc9505587b6619e0a926ff4c5b25cb1}} 
+\index{Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}!callEnded@{callEnded}}
+\index{callEnded@{callEnded}!Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}}
+\doxysubsubsection{\texorpdfstring{callEnded()}{callEnded()}}
+{\footnotesize\ttfamily void Main\+Window\+::call\+Ended (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+ID }\end{DoxyParamCaption})}
+
+
+
+This function has to be called when a call with a contact has just finished. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & std\+::string \& user\+ID \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a2d91f00ff63537fca8aaeb9e85ebc990}\label{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a2d91f00ff63537fca8aaeb9e85ebc990}} 
+\index{Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}!callFromUser@{callFromUser}}
+\index{callFromUser@{callFromUser}!Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}}
+\doxysubsubsection{\texorpdfstring{callFromUser()}{callFromUser()}}
+{\footnotesize\ttfamily void Main\+Window\+::call\+From\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+ID,  }\item[{const std\+::string \&}]{ip\+Adress,  }\item[{const uint16\+\_\+t}]{port }\end{DoxyParamCaption})}
+
+
+
+This function has to be called when an incoming call from a contact is being received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & std\+::string \& user\+ID \\
+\hline
+{\em const} & std\+::string \& ip\+Adress \\
+\hline
+{\em const} & uint16\+\_\+t port \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a933d7c140164fe4838eb82f802fe48a0}\label{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a933d7c140164fe4838eb82f802fe48a0}} 
+\index{Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}!callStarted@{callStarted}}
+\index{callStarted@{callStarted}!Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}}
+\doxysubsubsection{\texorpdfstring{callStarted()}{callStarted()}}
+{\footnotesize\ttfamily void Main\+Window\+::call\+Started (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+ID,  }\item[{const std\+::string \&}]{ip\+Adress,  }\item[{const uint16\+\_\+t}]{port }\end{DoxyParamCaption})}
+
+
+
+This function has to be called when a call with a contact just started. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & std\+::string \& user\+ID \\
+\hline
+{\em const} & std\+::string \& ip\+Adress \\
+\hline
+{\em const} & uint16\+\_\+t port \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_main_window_af62a7784639b517875954b3bf97b273f}\label{class_babel_1_1_client_1_1_user_interface_1_1_main_window_af62a7784639b517875954b3bf97b273f}} 
+\index{Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}!receiveMessageFromUser@{receiveMessageFromUser}}
+\index{receiveMessageFromUser@{receiveMessageFromUser}!Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}}
+\doxysubsubsection{\texorpdfstring{receiveMessageFromUser()}{receiveMessageFromUser()}}
+{\footnotesize\ttfamily void Main\+Window\+::receive\+Message\+From\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+ID,  }\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})}
+
+
+
+This function has to be called when a message from a user has been received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & std\+::string \& user\+ID \\
+\hline
+{\em const} & std\+::string \& message \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a6e15da4c53890d0bfc39007e569f8fa1}\label{class_babel_1_1_client_1_1_user_interface_1_1_main_window_a6e15da4c53890d0bfc39007e569f8fa1}} 
+\index{Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}!refreshUser@{refreshUser}}
+\index{refreshUser@{refreshUser}!Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}}
+\doxysubsubsection{\texorpdfstring{refreshUser()}{refreshUser()}}
+{\footnotesize\ttfamily void Babel\+::\+Client\+::\+User\+Interface\+::\+Main\+Window\+::refresh\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+ID,  }\item[{const std\+::string \&}]{username,  }\item[{const \mbox{\hyperlink{namespace_babel_1_1_rfc_ab73e7f9d8b3c800197a023e134d85bcb}{Babel\+::\+Rfc\+::\+State}}}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Does the same thing as add\+User. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+ID} & \\
+\hline
+{\em username} & \\
+\hline
+{\em state} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_main_window_ab32645609f5abc3c2753fdd1a56b3a1b}\label{class_babel_1_1_client_1_1_user_interface_1_1_main_window_ab32645609f5abc3c2753fdd1a56b3a1b}} 
+\index{Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}!removeUser@{removeUser}}
+\index{removeUser@{removeUser}!Babel::Client::UserInterface::MainWindow@{Babel::Client::UserInterface::MainWindow}}
+\doxysubsubsection{\texorpdfstring{removeUser()}{removeUser()}}
+{\footnotesize\ttfamily void Main\+Window\+::remove\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+ID,  }\item[{bool}]{notification = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Removes the contact having user\+ID as its id from the contact list of the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & std\+::string \& user\+ID \\
+\hline
+{\em bool} & notification \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/\+U\+I/Main\+Window.\+hpp\item 
+client/\+U\+I/Main\+Window.\+cpp\end{DoxyCompactItemize}

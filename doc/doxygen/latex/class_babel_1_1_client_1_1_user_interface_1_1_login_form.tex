@@ -1,0 +1,65 @@
+\hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_login_form}{}\doxysection{Babel\+::Client\+::User\+Interface\+::Login\+Form Class Reference}
+\label{class_babel_1_1_client_1_1_user_interface_1_1_login_form}\index{Babel::Client::UserInterface::LoginForm@{Babel::Client::UserInterface::LoginForm}}
+
+
+Contains a login form, letting the client put his username \& password and signing in/loging in or just quit.  
+
+
+
+
+{\ttfamily \#include $<$Login\+Form.\+hpp$>$}
+
+Inheritance diagram for Babel\+::Client\+::User\+Interface\+::Login\+Form\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_babel_1_1_client_1_1_user_interface_1_1_login_form}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_login_form_a70f71114ad409b3a284bc5ead91e244b}\label{class_babel_1_1_client_1_1_user_interface_1_1_login_form_a70f71114ad409b3a284bc5ead91e244b}} 
+void {\bfseries try\+Sign\+In} (Q\+String username, Q\+String password)
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_login_form_ada8bee3511dcf49252656076b3ef6233}\label{class_babel_1_1_client_1_1_user_interface_1_1_login_form_ada8bee3511dcf49252656076b3ef6233}} 
+void {\bfseries signal\+Begin\+Connect} ()
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_login_form_ab9268e075766166ada923a518cdeb585}\label{class_babel_1_1_client_1_1_user_interface_1_1_login_form_ab9268e075766166ada923a518cdeb585}} 
+void {\bfseries connection\+To\+Server\+Result} (bool result)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_login_form_a26f6450fa148a9e1e5ca4af23d2f4ed9}\label{class_babel_1_1_client_1_1_user_interface_1_1_login_form_a26f6450fa148a9e1e5ca4af23d2f4ed9}} 
+{\bfseries Login\+Form} (\mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket}{Tcp\+Socket}} \&tcp\+Socket, Q\+Widget $\ast$parent=nullptr)
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_login_form_acde57d44216067c848776970c9a59389}\label{class_babel_1_1_client_1_1_user_interface_1_1_login_form_acde57d44216067c848776970c9a59389}} 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_login_form_acde57d44216067c848776970c9a59389}{sign\+In}} ()
+\begin{DoxyCompactList}\small\item\em Emits the signal try\+Sign\+In with username and passwords in parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_login_form_a5918516c686b345addb3a5ac8819bc82}\label{class_babel_1_1_client_1_1_user_interface_1_1_login_form_a5918516c686b345addb3a5ac8819bc82}} 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_login_form_a5918516c686b345addb3a5ac8819bc82}{quit}} ()
+\begin{DoxyCompactList}\small\item\em Quits the application. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_login_form_a9bafcc0abfb3d9cbbc13d6317c0b43c3}\label{class_babel_1_1_client_1_1_user_interface_1_1_login_form_a9bafcc0abfb3d9cbbc13d6317c0b43c3}} 
+void \mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_login_form_a9bafcc0abfb3d9cbbc13d6317c0b43c3}{begin\+Connect}} ()
+\begin{DoxyCompactList}\small\item\em Begins connection, is meant to be used in a multithread way. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_login_form_af6a430c14c47e9ea654e64b0f4fb907b}\label{class_babel_1_1_client_1_1_user_interface_1_1_login_form_af6a430c14c47e9ea654e64b0f4fb907b}} 
+Q\+String {\bfseries username}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_login_form_a17261213f2eee63fe9176cf932a0ae6a}\label{class_babel_1_1_client_1_1_user_interface_1_1_login_form_a17261213f2eee63fe9176cf932a0ae6a}} 
+Q\+String {\bfseries password}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_client_1_1_user_interface_1_1_login_form_ae8c0861751b9b1b519c93892c104052a}\label{class_babel_1_1_client_1_1_user_interface_1_1_login_form_ae8c0861751b9b1b519c93892c104052a}} 
+\mbox{\hyperlink{class_babel_1_1_client_1_1_user_interface_1_1_tcp_socket}{Tcp\+Socket}} \& {\bfseries \+\_\+tcp\+Socket}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains a login form, letting the client put his username \& password and signing in/loging in or just quit. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/\+U\+I/Login\+Form.\+hpp\item 
+client/\+U\+I/Login\+Form.\+cpp\end{DoxyCompactItemize}

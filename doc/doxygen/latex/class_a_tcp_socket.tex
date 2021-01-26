@@ -1,0 +1,77 @@
+\hypertarget{class_a_tcp_socket}{}\doxysection{A\+Tcp\+Socket Class Reference}
+\label{class_a_tcp_socket}\index{ATcpSocket@{ATcpSocket}}
+
+
+Abstract class of Tcp Sockets based on Qt\+Network.  
+
+
+
+
+{\ttfamily \#include $<$A\+Tcp\+Socket.\+hpp$>$}
+
+Inheritance diagram for A\+Tcp\+Socket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_a_tcp_socket}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_tcp_socket_a03b9ec6b839d285ffe544e9da3736385}\label{class_a_tcp_socket_a03b9ec6b839d285ffe544e9da3736385}} 
+void {\bfseries data\+Received} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_tcp_socket_a89d87c40020d15a96e97f45f3d1eb37f}\label{class_a_tcp_socket_a89d87c40020d15a96e97f45f3d1eb37f}} 
+{\bfseries A\+Tcp\+Socket} (const Q\+String \&target\+Ip\+Adress, const quint16 target\+Port)
+\item 
+\mbox{\Hypertarget{class_a_tcp_socket_a8d6c5e88bab4f07186971da60430c590}\label{class_a_tcp_socket_a8d6c5e88bab4f07186971da60430c590}} 
+bool {\bfseries connect\+To\+Server} () override
+\item 
+\mbox{\Hypertarget{class_a_tcp_socket_a1139f30ac3a491b5c13b144e8e8bd961}\label{class_a_tcp_socket_a1139f30ac3a491b5c13b144e8e8bd961}} 
+bool {\bfseries is\+Connected} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_tcp_socket_a19efee4e30548c46747c75616a9eb2d3}\label{class_a_tcp_socket_a19efee4e30548c46747c75616a9eb2d3}} 
+const Q\+String {\bfseries ip\+Adress}
+\item 
+\mbox{\Hypertarget{class_a_tcp_socket_a4239a717e84a62e2b17f756b774b89c7}\label{class_a_tcp_socket_a4239a717e84a62e2b17f756b774b89c7}} 
+const quint16 {\bfseries port}
+\item 
+\mbox{\Hypertarget{class_a_tcp_socket_afbe8b772c0cd655ffecacf5f90c95e5c}\label{class_a_tcp_socket_afbe8b772c0cd655ffecacf5f90c95e5c}} 
+bool {\bfseries connected} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_tcp_socket_af092b66b922f9c99eb166868a3219c19}\label{class_a_tcp_socket_af092b66b922f9c99eb166868a3219c19}} 
+bool {\bfseries send\+Data} (const Q\+String \&data) override
+\item 
+\mbox{\Hypertarget{class_a_tcp_socket_ab6a011b7a3dbd34b4b7e4dff4643cc86}\label{class_a_tcp_socket_ab6a011b7a3dbd34b4b7e4dff4643cc86}} 
+bool {\bfseries send\+Data} (const std\+::string \&data) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_tcp_socket_a897f2ba5ba863929f94a95e72923cd3c}\label{class_a_tcp_socket_a897f2ba5ba863929f94a95e72923cd3c}} 
+Q\+Tcp\+Socket $\ast$ {\bfseries \+\_\+tcp\+Socket}
+\item 
+\mbox{\Hypertarget{class_a_tcp_socket_a36d2ea9f0dbff2ba4e73db5f47c37390}\label{class_a_tcp_socket_a36d2ea9f0dbff2ba4e73db5f47c37390}} 
+Q\+Byte\+Array {\bfseries \+\_\+buffer}
+\item 
+\mbox{\Hypertarget{class_a_tcp_socket_a97adfb2b2d49a908a8c693bc4834b74f}\label{class_a_tcp_socket_a97adfb2b2d49a908a8c693bc4834b74f}} 
+bool {\bfseries \+\_\+reading} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class of Tcp Sockets based on Qt\+Network. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+client/\+U\+I/A\+Tcp\+Socket.\+hpp\item 
+client/\+U\+I/A\+Tcp\+Socket.\+cpp\end{DoxyCompactItemize}

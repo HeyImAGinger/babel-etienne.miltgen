@@ -1,0 +1,46 @@
+\hypertarget{class_i_tcp_socket}{}\doxysection{I\+Tcp\+Socket Class Reference}
+\label{class_i_tcp_socket}\index{ITcpSocket@{ITcpSocket}}
+
+
+Interface class of Tcp Sockets based on Qt\+Network.  
+
+
+
+
+{\ttfamily \#include $<$I\+Tcp\+Socket.\+hpp$>$}
+
+Inheritance diagram for I\+Tcp\+Socket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_i_tcp_socket}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_tcp_socket_a96f009969249960846120f37d694f0b0}\label{class_i_tcp_socket_a96f009969249960846120f37d694f0b0}} 
+virtual bool {\bfseries connect\+To\+Server} ()=0
+\item 
+\mbox{\Hypertarget{class_i_tcp_socket_a8721644a6d9e6db58fdd40071137977b}\label{class_i_tcp_socket_a8721644a6d9e6db58fdd40071137977b}} 
+virtual bool {\bfseries is\+Connected} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_tcp_socket_a6fa8c457c22f0360c0027cb268df435c}\label{class_i_tcp_socket_a6fa8c457c22f0360c0027cb268df435c}} 
+virtual void {\bfseries read\+Incoming\+Data} ()=0
+\item 
+\mbox{\Hypertarget{class_i_tcp_socket_a2527d43a4b852ef7d994552b46d7671a}\label{class_i_tcp_socket_a2527d43a4b852ef7d994552b46d7671a}} 
+virtual bool {\bfseries send\+Data} (const Q\+String \&data)=0
+\item 
+\mbox{\Hypertarget{class_i_tcp_socket_aacb9a8043ab36fe331c05912494e96ce}\label{class_i_tcp_socket_aacb9a8043ab36fe331c05912494e96ce}} 
+virtual bool {\bfseries send\+Data} (const std\+::string \&data)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface class of Tcp Sockets based on Qt\+Network. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+client/\+U\+I/I\+Tcp\+Socket.\+hpp\end{DoxyCompactItemize}
