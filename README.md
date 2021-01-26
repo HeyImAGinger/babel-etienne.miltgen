@@ -59,3 +59,7 @@ $ ./windows_build.bat
 $ ./unix_setup.sh
 $ ./unix_build.sh
 ```
+
+## Meta
+
+Etienne MILTGEN – [@EtienneMiltgen](https://twitter.com/EtienneMiltgen) – etienne.miltgen@outlook.com
